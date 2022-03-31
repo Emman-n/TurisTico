@@ -5,7 +5,7 @@
 
     <StackLayout>
         <Frame BackgroundColor="#2196F3" Padding="24" CornerRadius="0">
-            <Label Text="Test1 de Branch Emman" HorizontalTextAlignment="Center" TextColor="White" FontSize="36"/>
+            <Label Text="Test1 de Branch Emman Escritorio  " HorizontalTextAlignment="Center" TextColor="White" FontSize="36"/>
         </Frame>
         
     </StackLayout>
