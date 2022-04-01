@@ -5,7 +5,7 @@
 
     <StackLayout>
         <Frame BackgroundColor="#2196F3" Padding="24" CornerRadius="0">
-            <Label Text="Test GITHUB" HorizontalTextAlignment="Center" TextColor="White" FontSize="36"/>
+            <Label Text="CoreaM" HorizontalTextAlignment="Center" TextColor="White" FontSize="36"/>
         </Frame>
         
     </StackLayout>
