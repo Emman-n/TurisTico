@@ -1,0 +1,40 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:TurisTico"
+             x:Class="TurisTico.View.FlyoutMenuPage">
+
+    <StackLayout>
+        <ListView>
+            <ListView.ItemsSource>
+                <x:Array Type="{x:Type local:FlyoutItemPage}">
+                    <local:FlyoutItemPage Title="Inicio" IconSource="https://toppng.com/uploads/preview/home-icon-home-house-icon-house-icon-free-11553508857ouiuhg9nsa.png" TargetPage="{x:Type local:Inicio}"/>
+                    <local:FlyoutItemPage Title="Categorias" IconSource="http://cdn.onlinewebfonts.com/svg/img_87908.png" TargetPage="{x:Type local:Inicio}"/>
+                    <local:FlyoutItemPage Title="Sobre nosotros" IconSource="http://cdn.onlinewebfonts.com/svg/img_87908.png" TargetPage="{x:Type local:AboutUs}"/>
+                    <local:FlyoutItemPage Title="Cerrar sesion" IconSource="http://cdn.onlinewebfonts.com/svg/img_119401.png" TargetPage="{x:Type local:LoginPage}"/>
+                    </x:Array>
+
+            </ListView.ItemsSource>
+            <ListView.ItemTemplate>
+                <DataTemplate>
+                   
+                    <ViewCell>
+                        <Grid>
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="33">
+
+                                </ColumnDefinition>
+                                <ColumnDefinition Width="*">
+
+                                </ColumnDefinition>
+                                <Image Source="{Binding IconSource}"/>
+                                <Label Grid.Column="1"  Text="{Binding Title}"/>
+
+                            </Grid.ColumnDefinitions>
+                        </Grid>
+                    </ViewCell>
+                </DataTemplate>
+            </ListView.ItemTemplate>
+        </ListView>
+    </StackLayout>
+</ContentPage>
