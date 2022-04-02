@@ -1,17 +1,19 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             xmlns:local="clr-namespace:TurisTico"
+             xmlns:local="clr-namespace:TurisTico.Models"
+             xmlns:local1="clr-namespace:TurisTico.View"
+             Title="FlyoutMenu"
              x:Class="TurisTico.View.FlyoutMenuPage">
 
     <StackLayout>
-        <ListView>
+        <ListView x:Name="listview" x:FieldModifier="public">
             <ListView.ItemsSource>
                 <x:Array Type="{x:Type local:FlyoutItemPage}">
-                    <local:FlyoutItemPage Title="Inicio" IconSource="https://toppng.com/uploads/preview/home-icon-home-house-icon-house-icon-free-11553508857ouiuhg9nsa.png" TargetPage="{x:Type local:Inicio}"/>
-                    <local:FlyoutItemPage Title="Categorias" IconSource="http://cdn.onlinewebfonts.com/svg/img_87908.png" TargetPage="{x:Type local:Inicio}"/>
-                    <local:FlyoutItemPage Title="Sobre nosotros" IconSource="http://cdn.onlinewebfonts.com/svg/img_87908.png" TargetPage="{x:Type local:AboutUs}"/>
-                    <local:FlyoutItemPage Title="Cerrar sesion" IconSource="http://cdn.onlinewebfonts.com/svg/img_119401.png" TargetPage="{x:Type local:LoginPage}"/>
+                    <local:FlyoutItemPage Title="Inicio" IconSource="https://toppng.com/uploads/preview/home-icon-home-house-icon-house-icon-free-11553508857ouiuhg9nsa.png" TargetPage="{x:Type local1:Inicio}"/>
+                    <local:FlyoutItemPage Title="Categorias" IconSource="http://cdn.onlinewebfonts.com/svg/img_87908.png" TargetPage="{x:Type local1:Inicio}"/>
+                    <local:FlyoutItemPage Title="Sobre nosotros" IconSource="http://cdn.onlinewebfonts.com/svg/img_87908.png" TargetPage="{x:Type local1:AboutUS}"/>
+                    <local:FlyoutItemPage Title="Cerrar sesion" IconSource="http://cdn.onlinewebfonts.com/svg/img_119401.png" TargetPage="{x:Type local1:LoginPage}"/>
                     </x:Array>
 
             </ListView.ItemsSource>
@@ -27,10 +29,12 @@
                                 <ColumnDefinition Width="*">
 
                                 </ColumnDefinition>
-                                <Image Source="{Binding IconSource}"/>
-                                <Label Grid.Column="1"  Text="{Binding Title}"/>
+                                
+                                
 
                             </Grid.ColumnDefinitions>
+                            <Image Source="{Binding IconSource}"/>
+                            <Label Grid.Column="1"  Text="{Binding Title}"/>
                         </Grid>
                     </ViewCell>
                 </DataTemplate>
