@@ -4,6 +4,7 @@ using System.ComponentModel;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using TurisTico.ViewModels;
 using Xamarin.Forms;
 
 namespace TurisTico
@@ -13,6 +14,14 @@ namespace TurisTico
         public MainPage()
         {
             InitializeComponent();
+            BindingContext = new MainPageViewModel();
+
         }
+
+        public double ColumnSpacing { get; set; }
+
+
+
+
     }
 }

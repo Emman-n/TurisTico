@@ -7,7 +7,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TurisTico.Android", "TurisT
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TurisTico.iOS", "TurisTico\TurisTico.iOS\TurisTico.iOS.csproj", "{A91125FE-889B-4F82-8A04-67370FF17F34}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TurisTico", "TurisTico\TurisTico\TurisTico.csproj", "{47A47A4D-95EC-4EE5-8829-9DA2D32D67F1}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TurisTico", "TurisTico\TurisTico\TurisTico.csproj", "{47A47A4D-95EC-4EE5-8829-9DA2D32D67F1}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

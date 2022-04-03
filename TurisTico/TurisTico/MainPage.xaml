@@ -1,7 +1,126 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
-             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="TurisTico.MainPage">
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
+           
+             x:Class="TurisTico.MainPage"
+             
+             
+             >
+
+
+    <ContentPage.ToolbarItems>
+        <ToolbarItem Text="Example Item"
+                  
+                 Order="Primary"
+                 Priority="0" />
+    </ContentPage.ToolbarItems>
+
+
+    <Grid RowSpacing="10" ColumnSpacing="5" Margin="5">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*"></RowDefinition>
+            <RowDefinition Height="*"></RowDefinition>
+            <RowDefinition Height="100"></RowDefinition>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*"></ColumnDefinition>
+            <ColumnDefinition Width="*"></ColumnDefinition>
+        </Grid.ColumnDefinitions>
+
+        <Image Grid.Row="0" Grid.Column="0"
+           Source="img1.jpg"
+           HorizontalOptions="FillAndExpand"
+           VerticalOptions="FillAndExpand" 
+           Aspect="Fill" />
+        <Button Grid.Row="0" Grid.Column="0"
+          Opacity="0.2"
+           HorizontalOptions="FillAndExpand"
+           VerticalOptions="FillAndExpand"
+           TextColor="White" />
+        <Label Text="Playas" 
+               TextColor="Black"
+               Grid.Row="0" Grid.Column="0"
+                 HorizontalOptions="Center"
+               VerticalOptions="Center" 
+                FontSize="50"/>
+
+
+ 
+    <!-- space 2-->
+
+        <Image Grid.Row="0" Grid.Column="1"
+           Source="montanas.jpg"
+           HorizontalOptions="FillAndExpand"
+           VerticalOptions="FillAndExpand" 
+           Aspect="Fill" />
+        <Button Grid.Row="0" Grid.Column="1"
+          Opacity="0.2"
+           HorizontalOptions="FillAndExpand"
+           VerticalOptions="FillAndExpand"
+           TextColor="White" />
+        <Label Text="Montanas" 
+               TextColor="Black"
+               Grid.Row="0" Grid.Column="1"
+                 HorizontalOptions="Center"
+               VerticalOptions="Center" 
+                FontSize="50"/>
+
+
+        <!-- space 3-->
+
+
+        <Image Grid.Row="1" Grid.Column="0"
+           Source="ciudad.jpg"
+           HorizontalOptions="FillAndExpand"
+           VerticalOptions="FillAndExpand" 
+           Aspect="AspectFill" />
+        <Button Grid.Row="1" Grid.Column="0"
+          Opacity="0.2"
+           HorizontalOptions="FillAndExpand"
+           VerticalOptions="FillAndExpand"
+           TextColor="White" />
+        <Label Text="Ciudad" 
+               TextColor="Black"
+               Grid.Row="1" Grid.Column="0"
+                 HorizontalOptions="Center"
+               VerticalOptions="Center" 
+                FontSize="50"/>
+
+
+        <!-- space 4-->
+
+
+
+        <Image Grid.Row="1" Grid.Column="1"
+           Source="bosques2.jpg"
+           HorizontalOptions="FillAndExpand"
+           VerticalOptions="FillAndExpand" 
+           Aspect="Fill" />
+        <Button Grid.Row="1" Grid.Column="1"
+          Opacity="0.2"
+           HorizontalOptions="FillAndExpand"
+           VerticalOptions="FillAndExpand"
+           TextColor="White" />
+        <Label  Grid.Row="1" Grid.Column="1"
+            Text="Bosques" 
+               TextColor="Black"
+                 HorizontalOptions="Center"
+               VerticalOptions="Center" 
+                FontSize="50"/>
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </Grid>
 
     <StackLayout>
         <Frame BackgroundColor="#2196F3" Padding="24" CornerRadius="0">
@@ -11,3 +130,29 @@
     </StackLayout>
 
 </ContentPage>
+
+
+
+<!--<Grid BackgroundColor="White">
+
+
+
+    <ImageButton Source="img1.jpg" Grid.Row="0" Grid.Column="0" BackgroundColor="White"/>
+
+    <ImageButton Source="img1.jpg" Grid.Row="0" Grid.Column="1"   BackgroundColor="White"/>
+
+
+    <ImageButton  Source="img1.jpg" Grid.Row="1" Grid.Column="0"  BackgroundColor="White"/>
+
+
+    <ImageButton Source="img1.jpg" Grid.Row="1" Grid.Column="1" BackgroundColor="White"/>
+
+</Grid>-->
+
+
+
+
+
+     
+    
+    
