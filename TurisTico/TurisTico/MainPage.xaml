@@ -8,12 +8,7 @@
              >
 
 
-    <ContentPage.ToolbarItems>
-        <ToolbarItem Text="Example Item"
-                  
-                 Order="Primary"
-                 Priority="0" />
-    </ContentPage.ToolbarItems>
+ 
 
 
     <Grid RowSpacing="10" ColumnSpacing="5" Margin="5">
@@ -122,12 +117,7 @@
 
     </Grid>
 
-    <StackLayout>
-        <Frame BackgroundColor="#2196F3" Padding="24" CornerRadius="0">
-            <Label Text="Test1 de Branch Emman Escritorio  " HorizontalTextAlignment="Center" TextColor="White" FontSize="36"/>
-        </Frame>
-        
-    </StackLayout>
+    
 
 </ContentPage>
 
