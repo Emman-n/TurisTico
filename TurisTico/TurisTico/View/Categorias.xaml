@@ -1,0 +1,119 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="TurisTico.View.Categorias">
+    
+    
+    <Grid RowSpacing="10" ColumnSpacing="5" Margin="5">
+
+
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*"></RowDefinition>
+            <RowDefinition Height="*"></RowDefinition>
+            <RowDefinition Height="100"></RowDefinition>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*"></ColumnDefinition>
+            <ColumnDefinition Width="*"></ColumnDefinition>
+        </Grid.ColumnDefinitions>
+
+
+
+        <Image Grid.Row="0" Grid.Column="0"
+           Source="img3.jpg"
+           HorizontalOptions="FillAndExpand"
+           VerticalOptions="FillAndExpand" 
+           Aspect="Fill" />
+        <Button Grid.Row="0" Grid.Column="0"
+                x:Name="btnSanJose"
+                 Clicked="btnSanJose_Clicked"
+          Opacity="0.2"
+           HorizontalOptions="FillAndExpand"
+           VerticalOptions="FillAndExpand"
+           TextColor="White" />
+        <Label Text="Playas" 
+               TextColor="Black"
+               Grid.Row="0" Grid.Column="0"
+                 HorizontalOptions="Center"
+               VerticalOptions="Center" 
+                FontSize="30"/>
+
+
+
+        <!--space 2-->
+
+        <Image Grid.Row="0" Grid.Column="1"
+           Source="img4.jpg"
+           HorizontalOptions="FillAndExpand"
+           VerticalOptions="FillAndExpand" 
+           Aspect="Fill" />
+        <Button Grid.Row="0" Grid.Column="1"
+          Opacity="0.2"
+           HorizontalOptions="FillAndExpand"
+           VerticalOptions="FillAndExpand"
+           TextColor="White" />
+        <Label Text="Montanas" 
+               TextColor="Black"
+               Grid.Row="0" Grid.Column="1"
+                 HorizontalOptions="Center"
+               VerticalOptions="Center" 
+                FontSize="30"/>
+
+
+        <!--space 3-->
+
+
+        <Image Grid.Row="1" Grid.Column="0"
+           Source="img1.jpg"
+           HorizontalOptions="FillAndExpand"
+           VerticalOptions="FillAndExpand" 
+           Aspect="AspectFill" />
+        <Button Grid.Row="1" Grid.Column="0"
+          Opacity="0.2"
+           HorizontalOptions="FillAndExpand"
+           VerticalOptions="FillAndExpand"
+           TextColor="White" />
+        <Label Text="Ciudad" 
+               TextColor="Black"
+               Grid.Row="1" Grid.Column="0"
+                 HorizontalOptions="Center"
+               VerticalOptions="Center" 
+                FontSize="30"/>
+
+
+        <!--space 4-->
+
+
+
+        <Image Grid.Row="1" Grid.Column="1"
+           Source="img5.jpg"
+           HorizontalOptions="FillAndExpand"
+           VerticalOptions="FillAndExpand" 
+           Aspect="Fill" />
+        <Button Grid.Row="1" Grid.Column="1"
+          Opacity="0.2"
+           HorizontalOptions="FillAndExpand"
+           VerticalOptions="FillAndExpand"
+           TextColor="White" />
+        <Label  Grid.Row="1" Grid.Column="1"
+            Text="Bosques" 
+               TextColor="Black"
+                 HorizontalOptions="Center"
+               VerticalOptions="Center" 
+                FontSize="30"/>
+
+
+
+
+
+
+
+
+
+
+
+
+
+    </Grid>
+
+</ContentPage>
