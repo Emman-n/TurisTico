@@ -20,6 +20,12 @@
   </ItemGroup>
 
   <ItemGroup>
+    <Compile Update="View\MainP.xaml.cs">
+      <DependentUpon>MainP.xaml</DependentUpon>
+    </Compile>
+  </ItemGroup>
+
+  <ItemGroup>
     <EmbeddedResource Update="View\AboutUS.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
