@@ -5,7 +5,7 @@
     <ContentPage.Content>
         <StackLayout Margin="20,20,20,20">
             <Frame BackgroundColor="Orange" BorderColor="Black" Padding="3" Margin="0" HorizontalOptions="StartAndExpand">
-            <Label Text="TurisTico" TextColor="Black" FontSize="20" FontAttributes="Bold" Margin="15"></Label>
+            <Label Text="TurisTicoTest" TextColor="Black" FontSize="20" FontAttributes="Bold" Margin="15"></Label>
             </Frame>
             <ListView ItemsSource="{Binding provinciasss}" HasUnevenRows="True" 
                       ItemSelected="ListView_ItemSelected" 
