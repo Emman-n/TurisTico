@@ -2,16 +2,17 @@
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" 
            
-             x:Class="TurisTico.MainPage"
-             
-             
-             >
+             x:Class="TurisTico.MainPage"    >
+
+
 
 
  
 
 
     <Grid RowSpacing="10" ColumnSpacing="5" Margin="5">
+
+       
         <Grid.RowDefinitions>
             <RowDefinition Height="*"></RowDefinition>
             <RowDefinition Height="*"></RowDefinition>
@@ -21,13 +22,17 @@
             <ColumnDefinition Width="*"></ColumnDefinition>
             <ColumnDefinition Width="*"></ColumnDefinition>
         </Grid.ColumnDefinitions>
-
+        
+     
+        
         <Image Grid.Row="0" Grid.Column="0"
            Source="img1.jpg"
            HorizontalOptions="FillAndExpand"
            VerticalOptions="FillAndExpand" 
            Aspect="Fill" />
         <Button Grid.Row="0" Grid.Column="0"
+                x:Name="btnSanJose"
+                 Clicked="btnSanJose_Clicked"
           Opacity="0.2"
            HorizontalOptions="FillAndExpand"
            VerticalOptions="FillAndExpand"
@@ -41,7 +46,7 @@
 
 
  
-    <!-- space 2-->
+     <!--space 2-->
 
         <Image Grid.Row="0" Grid.Column="1"
            Source="montanas.jpg"
@@ -61,7 +66,7 @@
                 FontSize="50"/>
 
 
-        <!-- space 3-->
+         <!--space 3-->
 
 
         <Image Grid.Row="1" Grid.Column="0"
@@ -82,7 +87,7 @@
                 FontSize="50"/>
 
 
-        <!-- space 4-->
+         <!--space 4-->
 
 
 
