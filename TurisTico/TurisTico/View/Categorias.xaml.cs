@@ -12,7 +12,7 @@ namespace TurisTico
     public partial class MainPage : ContentPage
     {
         
-        public MainPage()
+        public MainPage()   
         {
             InitializeComponent();
             BindingContext = new LugaresViewModel();
