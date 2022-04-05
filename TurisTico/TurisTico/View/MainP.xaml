@@ -6,6 +6,7 @@
             Title="Menu">
 
     <FlyoutPage.Flyout>
+      
         <local1:FlyoutMenuPage x:Name="flyout"/>
     </FlyoutPage.Flyout>
 

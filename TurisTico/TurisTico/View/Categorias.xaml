@@ -1,16 +1,43 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="TurisTico.View.Categorias">
-    
-    
-    <Grid RowSpacing="10" ColumnSpacing="5" Margin="5">
+             x:Class="TurisTico.View.Categorias"
+             
+              Padding="5" 
+             >
+
+     
+    <ContentPage.ToolbarItems>
+
+
+        <ToolbarItem Text="Inico" Order="Primary">
+
+        </ToolbarItem>
+
+        <ToolbarItem Text="Turistico" Order="Primary">
+            <ToolbarItem.Icon>
+                <OnPlatform x:TypeArguments="FileImageSource"
+                        Android="icon.png"/>
+
+            </ToolbarItem.Icon>
+        </ToolbarItem>
+
+
+    </ContentPage.ToolbarItems>
+
+
+    <StackLayout>
+
+        <Label Text="Categorias"   FontFamily="Dancing" HorizontalOptions="Center" TextColor="Black" FontSize="30"   Margin="15"/>
+
+
+        <Grid RowSpacing="10" ColumnSpacing="5" Margin="2">
 
 
         <Grid.RowDefinitions>
             <RowDefinition Height="*"></RowDefinition>
             <RowDefinition Height="*"></RowDefinition>
-            <RowDefinition Height="100"></RowDefinition>
+            <RowDefinition Height="0"></RowDefinition>
         </Grid.RowDefinitions>
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="*"></ColumnDefinition>
@@ -23,7 +50,9 @@
            Source="img3.jpg"
            HorizontalOptions="FillAndExpand"
            VerticalOptions="FillAndExpand" 
-           Aspect="Fill" />
+           Aspect="Fill" 
+              
+               />
         <Button Grid.Row="0" Grid.Column="0"
                 x:Name="btnSanJose"
                  Clicked="btnSanJose_Clicked"
@@ -32,11 +61,12 @@
            VerticalOptions="FillAndExpand"
            TextColor="White" />
         <Label Text="Playas" 
-               TextColor="Black"
+               TextColor="White"
                Grid.Row="0" Grid.Column="0"
                  HorizontalOptions="Center"
                VerticalOptions="Center" 
-                FontSize="30"/>
+                FontSize="30"
+                FontFamily="Dancing"/>
 
 
 
@@ -53,11 +83,13 @@
            VerticalOptions="FillAndExpand"
            TextColor="White" />
         <Label Text="Montanas" 
-               TextColor="Black"
+               TextColor="White"
                Grid.Row="0" Grid.Column="1"
                  HorizontalOptions="Center"
                VerticalOptions="Center" 
-                FontSize="30"/>
+                FontSize="30"
+                 FontFamily="Dancing"
+               />
 
 
         <!--space 3-->
@@ -74,11 +106,13 @@
            VerticalOptions="FillAndExpand"
            TextColor="White" />
         <Label Text="Ciudad" 
-               TextColor="Black"
+               TextColor="White"
                Grid.Row="1" Grid.Column="0"
                  HorizontalOptions="Center"
                VerticalOptions="Center" 
-                FontSize="30"/>
+                FontSize="30"
+                 FontFamily="Dancing"
+               />
 
 
         <!--space 4-->
@@ -97,10 +131,13 @@
            TextColor="White" />
         <Label  Grid.Row="1" Grid.Column="1"
             Text="Bosques" 
-               TextColor="Black"
+               TextColor="White"
                  HorizontalOptions="Center"
                VerticalOptions="Center" 
-                FontSize="30"/>
+                FontSize="30"
+                  FontFamily="Dancing"
+                FontAttributes="Bold"
+                />
 
 
 
@@ -115,5 +152,6 @@
 
 
     </Grid>
+    </StackLayout>
 
 </ContentPage>

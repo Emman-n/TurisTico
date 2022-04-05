@@ -19,7 +19,7 @@
             </ListView.ItemsSource>
             <ListView.ItemTemplate>
                 <DataTemplate>
-                   
+                 
                     <ViewCell>
                         <Grid>
                             <Grid.ColumnDefinitions>
@@ -35,6 +35,9 @@
                             </Grid.ColumnDefinitions>
                             <Image Source="{Binding IconSource}"/>
                             <Label Grid.Column="1"  Text="{Binding Title}"/>
+
+
+                            
                         </Grid>
                     </ViewCell>
                 </DataTemplate>

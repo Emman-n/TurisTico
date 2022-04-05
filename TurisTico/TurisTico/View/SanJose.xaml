@@ -2,71 +2,105 @@
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="TurisTico.SanJose"
-            BackgroundColor="Black"
-             >
+         
+             BackgroundColor="#E6E6E6"
+           >
+   <ContentPage.ToolbarItems>
+  
+       
+        <ToolbarItem Text="Inico" Order="Primary">
+            
+        </ToolbarItem>
+       
+        <ToolbarItem Text="Turistico" Order="Primary">
+            <ToolbarItem.Icon>
+                <OnPlatform x:TypeArguments="FileImageSource"
+                        Android="icon.png"/>
+
+            </ToolbarItem.Icon>
+        </ToolbarItem>
 
 
+    </ContentPage.ToolbarItems>
 
+    
+    
 
+    <StackLayout >
 
-    <CollectionView ItemsSource="{Binding Products }" >
+        <Label Text="Opciones en Guanacaste"  FontFamily="Dancing" HorizontalOptions="Center" TextColor="Black" FontSize="30"   Margin="15"/>
+         
+
+        <CollectionView   ItemsSource="{Binding Products }" >
         <CollectionView.ItemTemplate>
-            <DataTemplate>
-                <Frame Padding="4"
-                      CornerRadius="5"
-                       IsClippedToBounds="False">
+            <DataTemplate  >
+                <Frame Padding="2"
                     
-                    <Grid HeightRequest="200" BackgroundColor="White"  >
+                       IsClippedToBounds="False"
+                       BackgroundColor="#333333"
+                       >
+                    
+                    <Grid HeightRequest="200" BackgroundColor="#E6E6E6"  >
                     <Grid.ColumnDefinitions  >
                         <ColumnDefinition Width=".1*"/>
                         <ColumnDefinition Width=".9*"/>
                             <ColumnDefinition Width=".10*"/>
                         </Grid.ColumnDefinitions>
-                    <Grid.RowDefinitions>
+                    <Grid.RowDefinitions >
                         <RowDefinition Height=".9*"/>
                         <RowDefinition Height=".9*"/>
-                    </Grid.RowDefinitions>
+ 
+                            </Grid.RowDefinitions>
+
                     
-                    
-                    <Image
+                    <ImageButton
                         Grid.RowSpan="5"
                          Grid.Column="1"
-                           
-                        Source="{Binding Image}"/>
+
+                        Source="{Binding Image}"
+                        
+                         HorizontalOptions="FillAndExpand"
+                          VerticalOptions="FillAndExpand" 
+                        Aspect="Fill"
+                        
+                        
+                        />
 
                     <Label
                        
                            FontAttributes="Bold"
                         Grid.Column="3"
-                         Grid.Row="2"
+                         Grid.Row="1"
                         FontSize="15"
                         Text= "{Binding Nombre }"      
                         VerticalOptions="Center"
-                   
-                        
-                            />
+                       
+                    TextColor="Black"
+                         FontFamily="Noto"   />
                     
                     <Label
-                      
+                        TextColor="Black"
                         FontAttributes="Bold"
-                        Grid.Row="3"
+                        Grid.Row="2"
                         Grid.Column="3"
                        FontSize="15"
                         Text="{Binding Lugar }"                         
-                        />
+                        FontFamily="Noto" />
 
 
                     <Label
+                          TextColor="Black"
                          FontAttributes="Bold"
-                        Grid.Row="1"
+                        Grid.Row="3"
                         Grid.Column="3"
                          FontSize="15"
                         Text="{Binding Precio }"                         
-                            />
+                        FontFamily="Noto"     />
 
+                      
 
-
-                </Grid>
+                    </Grid>
+                   
                 </Frame>
                  
                 
@@ -75,7 +109,7 @@
             </DataTemplate>
         </CollectionView.ItemTemplate>
     </CollectionView>
-
+    </StackLayout>
 
 
 
