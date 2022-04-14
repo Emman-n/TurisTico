@@ -10,11 +10,11 @@
     <ContentPage.ToolbarItems>
 
 
-        <ToolbarItem Text="Inico" Order="Primary">
+        <ToolbarItem Text="Inicio" Order="Primary" Clicked="ToolbarItem_Clicked">
 
         </ToolbarItem>
 
-        <ToolbarItem Text="Turistico" Order="Primary">
+        <ToolbarItem Text="Turistico" Order="Primary" >
             <ToolbarItem.Icon>
                 <OnPlatform x:TypeArguments="FileImageSource"
                         Android="icon.png"/>

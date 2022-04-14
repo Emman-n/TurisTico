@@ -22,7 +22,7 @@
                                 <Grid.RowDefinitions>
                                     <RowDefinition Height="Auto"/>
                                     <RowDefinition Height="*"/>
-                                    <RowDefinition Height="0.2*"/>
+                                    <RowDefinition Height="0.6*"/>
 
                                 </Grid.RowDefinitions>
                                 <Grid.ColumnDefinitions>
@@ -34,39 +34,41 @@
                                 
                                 
                                 
-                                
-                                <Button Grid.Row="0"
-                                        BackgroundColor="White"
+                                <!--Guanacaste-->
+                                    <Button Grid.Row="0"
+                                       BackgroundColor="White"
                                        FontSize="20"
                                        Text="{Binding Nommbre_Provincia}"
                                        TextColor="Black"
                                        FontAttributes="Bold"
-                                          x:Name="btnSanJose"
-                        Clicked="btnSanJose_Clicked"
-                                         FontFamily="Dancing"
+                                       x:Name="btnSanJose"
+                                       Clicked="btnSanJose_Clicked"
+                                       FontFamily="Dancing"
                                         />
                                 
-                                <ImageButton Grid.Row="1"
-                                               BackgroundColor="White"
+                                    <ImageButton Grid.Row="1"
+                                       BackgroundColor="White"
                                        Source="{Binding Imagen_url}"
-                                       Aspect="AspectFill"
+                                       Aspect="AspectFit"
                                        HeightRequest="200"
-                                       WidthRequest="60"
+                                       WidthRequest="200"
                                                                
-                        Clicked="btnSanJose_Clicked"
+                                       Clicked="btnSanJose_Clicked"
                                              />
 
                                 <Button Grid.Row="2"
                                           BackgroundColor="White"
                                        Text="{Binding descripcion}"
-                                         FontSize="15"
+                                         FontSize="10"
                                        TextColor="Black"
                                       
                                        FontAttributes="Bold"
                                        VerticalOptions="FillAndExpand"
                                                            
-                        Clicked="btnSanJose_Clicked"
+                                       Clicked="btnSanJose_Clicked"
                                         />
+                                
+                              
 
 
 

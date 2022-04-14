@@ -96,5 +96,10 @@ namespace TurisTico.View
 
         }
 
+        private async void btnPuntarenas_Clicked(object sender, EventArgs e)
+        {
+            await Navigation.PushAsync(new Puntarenas());
+            BindingContext = new LugaresViewModel();
+        }
     }
 }

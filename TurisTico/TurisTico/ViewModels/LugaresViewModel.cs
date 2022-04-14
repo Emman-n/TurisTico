@@ -21,11 +21,11 @@ namespace TurisTico.ViewModels
 
                 new Product
                 {
-                    Nombre = "Four Seasons Resort",
-                    Lugar = "Papagayo",
+                    Nombre = "Nombre = Four Seasons",
+                    Lugar = "Ubicacion = Papagayo",
                     Image = "lugar1.jpg",
-
-                    Precio = 500
+                     
+                    Precio = "Precio = 500"
 
                 },
 
@@ -35,7 +35,7 @@ namespace TurisTico.ViewModels
                     Lugar = "Reserva Conchal",
                     Image = "lugar2.jpg",
 
-                    Precio = 200
+                    Precio = "Precio =200"
 
                 },
 
@@ -45,7 +45,7 @@ namespace TurisTico.ViewModels
                     Lugar = "Tamarindo",
                     Image = "lugar3.jpg",
 
-                    Precio = 250
+                    Precio = "Precio = 250"
 
                 },
 
@@ -55,7 +55,7 @@ namespace TurisTico.ViewModels
                     Lugar = "Playa El Jobo",
                    Image = "lugar4.jpg",
 
-                    Precio = 234
+                    Precio = "Precio = 234"
                 },
 
                 new Product
@@ -64,7 +64,7 @@ namespace TurisTico.ViewModels
                     Lugar = "Playa Samara",
                     Image = "lugar5.jpg",
 
-                    Precio = 77
+                    Precio = "Precio =77"
 
                 },
 
@@ -74,7 +74,7 @@ namespace TurisTico.ViewModels
                     Lugar = "Playas del Coco",
                     Image = "lugar6.jpg",
 
-                    Precio = 80
+                    Precio = "Precio =80 "
 
                 },
 
@@ -85,7 +85,7 @@ namespace TurisTico.ViewModels
                     Lugar = "Playa Flamingo",
                     Image = "lugar7.jpg",
 
-                    Precio = 120
+                    Precio = "Precio =120"
 
                 },
 
