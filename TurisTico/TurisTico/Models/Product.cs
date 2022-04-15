@@ -12,7 +12,7 @@ namespace TurisTico.Models
 
         public string Image { get; set; }
 
-        public decimal Precio { get; set; }
+        public string Precio { get; set; }
 
       
 

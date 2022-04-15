@@ -10,9 +10,9 @@ using Xamarin.Forms.Xaml;
 namespace TurisTico.View
 {
     [XamlCompilation(XamlCompilationOptions.Compile)]
-    public partial class Sanjose : ContentPage
+    public partial class Limon : ContentPage
     {
-        public Sanjose()
+        public Limon()
         {
             InitializeComponent();
         }

@@ -2,6 +2,9 @@
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 
+
+[assembly: ExportFont("NotoSans-Regular.ttf",Alias = "Noto")]
+[assembly: ExportFont("DancingScript-Bold.ttf", Alias = "Dancing")]
 namespace TurisTico
 {
     public partial class App : Application

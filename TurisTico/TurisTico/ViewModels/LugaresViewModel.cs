@@ -21,72 +21,71 @@ namespace TurisTico.ViewModels
 
                 new Product
                 {
-                    Nombre = "Nombre largo 1234568910",
-                    Lugar = "lugar",
-                    Image = "img1.jpg",
-
-                    Precio = 111
-
-                },
-
-                new Product
-                {
-                    Nombre = "a",
-                    Lugar = "b",
-                    Image = "img1.jpg",
-
-                    Precio = 111
+                    Nombre = "Nombre = Four Seasons",
+                    Lugar = "Ubicacion = Papagayo",
+                    Image = "lugar1.jpg",
+                     
+                    Precio = "Precio = 500"
 
                 },
 
                 new Product
                 {
-                    Nombre = "a",
-                    Lugar = "b",
-                    Image = "img1.jpg",
+                    Nombre = "W Costa Rica",
+                    Lugar = "Reserva Conchal",
+                    Image = "lugar2.jpg",
 
-                    Precio = 111
-
-                },
-
-                new Product
-                {
-                    Nombre = "a",
-                    Lugar = "b",
-                    Image = "img1.jpg",
-
-                    Precio = 111
+                    Precio = "Precio =200"
 
                 },
 
                 new Product
                 {
-                    Nombre = "a",
-                    Lugar = "b",
-                    Image = "img1.jpg",
+                    Nombre = "Altos de Eros ",
+                    Lugar = "Tamarindo",
+                    Image = "lugar3.jpg",
 
-                    Precio = 111
+                    Precio = "Precio = 250"
+
+                },
+
+                new Product
+                {
+                    Nombre = "Dreams Las Mareas",
+                    Lugar = "Playa El Jobo",
+                   Image = "lugar4.jpg",
+
+                    Precio = "Precio = 234"
+                },
+
+                new Product
+                {
+                    Nombre = "Fenix Hotel",
+                    Lugar = "Playa Samara",
+                    Image = "lugar5.jpg",
+
+                    Precio = "Precio =77"
 
                 },
 
                new Product
                 {
-                    Nombre = "a",
-                    Lugar = "b",
-                    Image = "montanas.jpg",
+                    Nombre = "Villa Buena Onda",
+                    Lugar = "Playas del Coco",
+                    Image = "lugar6.jpg",
 
-                    Precio = 111
+                    Precio = "Precio =80 "
 
                 },
 
 
                new Product
                 {
-                    Nombre = "a",
-                    Lugar = "b",
-                    Image = "montanas.jpg",
+                    Nombre = "Margaritaville ",
+                    Lugar = "Playa Flamingo",
+                    Image = "lugar7.jpg",
 
-                    Precio = 111
+                    Precio = "Precio =120"
 
                 },
 
@@ -94,6 +93,8 @@ namespace TurisTico.ViewModels
 
 
             };
+
+
         }
 
     }

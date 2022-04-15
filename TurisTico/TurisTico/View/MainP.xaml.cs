@@ -15,6 +15,9 @@ namespace TurisTico
         {
             InitializeComponent();
             flyout.listview.ItemSelected += OnSelectedItem;
+            ToolbarItem item = new ToolbarItem();
+           
+
         }
 
         private void OnSelectedItem(object sender, SelectedItemChangedEventArgs e)

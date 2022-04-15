@@ -10,9 +10,9 @@ using Xamarin.Forms.Xaml;
 namespace TurisTico.View
 {
     [XamlCompilation(XamlCompilationOptions.Compile)]
-    public partial class Sanjose : ContentPage
+    public partial class Heredia : ContentPage
     {
-        public Sanjose()
+        public Heredia()
         {
             InitializeComponent();
         }

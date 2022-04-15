@@ -4,6 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using TurisTico.Models;
+using TurisTico.ViewModels;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 
@@ -17,6 +18,25 @@ namespace TurisTico.View
         {
             InitializeComponent();
             provinciasss = new List<Provincias>();
+
+
+            provinciasss.Add(new Provincias
+            {
+                Nommbre_Provincia = "Guanacaste",
+                descripcion = "La cuna de nuestro folklore.La belleza incomparable de sus paisajes que van desde el bosque seco tropical hasta el bosque montano bajo y su cálido clima, así como su fértil naturaleza han hecho de Guanacaste uno de los lugares más concurridos por el turismo local e internacional y es una de las regiones de mayor desarrollo",
+                Imagen_url = "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/0c/76/8a/9d/catarata-rio-celeste.jpg?w=1000&h=-1&s=1"
+
+            });
+
+            provinciasss.Add(new Provincias
+            {
+                Nommbre_Provincia = "Puntarenas",
+                descripcion = "Te garantizamos rotundamente que el disfrute en esta región es algo que no se debe poner en duda, atrévete a conocer.",
+                Imagen_url = "https://passporterapp.com/es/blog/wp-content/uploads/2021/11/Puntarenas-Costa-Rica.jpg"
+
+
+            });
+
 
             provinciasss.Add(new Provincias
             {
@@ -39,13 +59,7 @@ namespace TurisTico.View
                 Imagen_url = "https://strawberrytours.com/images/LandingPages/SanJose/San-Jose-1000x667.jpg"
 
             });
-            provinciasss.Add(new Provincias
-            {
-                Nommbre_Provincia = "Guanacaste",
-                descripcion = "La cuna de nuestro folklore.La belleza incomparable de sus paisajes que van desde el bosque seco tropical hasta el bosque montano bajo y su cálido clima, así como su fértil naturaleza han hecho de Guanacaste uno de los lugares más concurridos por el turismo local e internacional y es una de las regiones de mayor desarrollo",
-                Imagen_url = "https://dynamic-media-cdn.tripadvisor.com/media/photo-o/0c/76/8a/9d/catarata-rio-celeste.jpg?w=1000&h=-1&s=1"
-
-            });
+       
             provinciasss.Add(new Provincias
             {
                 Nommbre_Provincia = "Heredia",
@@ -61,14 +75,7 @@ namespace TurisTico.View
 
 
             });
-            provinciasss.Add(new Provincias
-            {
-                Nommbre_Provincia = "Puntarenas",
-                descripcion = "Te garantizamos rotundamente que el disfrute en esta región es algo que no se debe poner en duda, atrévete a conocer.",
-                Imagen_url = "https://passporterapp.com/es/blog/wp-content/uploads/2021/11/Puntarenas-Costa-Rica.jpg"
-
-
-            });
+           
             BindingContext = this;  
         }
 
@@ -81,6 +88,18 @@ namespace TurisTico.View
         {
             Provincias tappedItem = e.Item as Provincias;
 
+        }
+        private async void btnSanJose_Clicked(object sender, EventArgs e)
+        {
+            await Navigation.PushAsync(new SanJose());
+            BindingContext = new LugaresViewModel();
+
+        }
+
+        private async void btnPuntarenas_Clicked(object sender, EventArgs e)
+        {
+            await Navigation.PushAsync(new Puntarenas());
+            BindingContext = new LugaresViewModel();
         }
     }
 }
