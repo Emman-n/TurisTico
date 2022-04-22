@@ -1,12 +1,124 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="TurisTico.View.Alajuela">
-    <ContentPage.Content>
-        <StackLayout>
-            <Label Text="Welcome to Xamarin.Forms!"
-                VerticalOptions="CenterAndExpand" 
-                HorizontalOptions="CenterAndExpand" />
-        </StackLayout>
-    </ContentPage.Content>
+             x:Class="TurisTico.SanJose"
+         
+             BackgroundColor="#E6E6E6"
+           >
+    <ContentPage.ToolbarItems>
+
+
+        <ToolbarItem Text="Inicio" Order="Primary" Clicked="ToolbarItem_Clicked">
+
+        </ToolbarItem>
+
+        <ToolbarItem Text="Turistico" Order="Primary">
+            <ToolbarItem.Icon>
+                <OnPlatform x:TypeArguments="FileImageSource"
+                        Android="icon.png"/>
+
+            </ToolbarItem.Icon>
+        </ToolbarItem>
+
+
+    </ContentPage.ToolbarItems>
+
+
+
+
+    <StackLayout >
+
+        <Label Text="Opciones en Guanacaste"  FontFamily="Dancing" HorizontalOptions="Center" TextColor="Black" FontSize="30"   Margin="15"/>
+
+
+        <CollectionView   ItemsSource="{Binding Products }" >
+            <CollectionView.ItemTemplate>
+                <DataTemplate  >
+                    <Frame Padding="2"
+                    
+                       IsClippedToBounds="False"
+                       BackgroundColor="#333333"
+                       >
+
+                        <Grid HeightRequest="200" BackgroundColor="#E6E6E6"  >
+                            <Grid.ColumnDefinitions  >
+                                <ColumnDefinition Width=".1*"/>
+                                <ColumnDefinition Width=".9*"/>
+                                <ColumnDefinition Width=".10*"/>
+                            </Grid.ColumnDefinitions>
+                            <Grid.RowDefinitions >
+                                <RowDefinition Height=".9*"/>
+                                <RowDefinition Height=".9*"/>
+
+                            </Grid.RowDefinitions>
+
+
+                            <ImageButton
+                        Grid.RowSpan="5"
+                         Grid.Column="1"
+
+                        Source="{Binding Image}"
+                        
+                         HorizontalOptions="FillAndExpand"
+                          VerticalOptions="FillAndExpand" 
+                        Aspect="Fill"
+                        
+                        
+                        />
+
+                            <Label
+                       
+                           FontAttributes="Bold"
+                        Grid.Column="3"
+                         Grid.Row="1"
+                        FontSize="15"
+                        Text= "{Binding Nombre }"      
+                        VerticalOptions="Center"
+                       
+                    TextColor="Black"
+                         FontFamily="Noto"   />
+
+                            <Label
+                        TextColor="Black"
+                        FontAttributes="Bold"
+                        Grid.Row="2"
+                        Grid.Column="3"
+                       FontSize="15"
+                        Text="{Binding Lugar }"                         
+                        FontFamily="Noto" />
+
+
+                            <Label
+                          TextColor="Black"
+                         FontAttributes="Bold"
+                        Grid.Row="3"
+                        Grid.Column="3"
+                         FontSize="15"
+                        Text="{Binding Precio }"                         
+                        FontFamily="Noto"     />
+
+
+
+                        </Grid>
+
+                    </Frame>
+
+
+
+
+                </DataTemplate>
+            </CollectionView.ItemTemplate>
+        </CollectionView>
+    </StackLayout>
+
+
+
+
+
+
+
+
+
+
+
 </ContentPage>
