@@ -6,7 +6,7 @@
         <StackLayout Margin="20,20,20,20">
 
 
-            <Label Text="Provincias"   FontFamily="Dancing"  HorizontalOptions="Center" TextColor="Black" FontSize="35"   Margin="15"/>
+            <Label Text="ProvinciasDiego"   FontFamily="Dancing"  HorizontalOptions="Center" TextColor="Black" FontSize="35"   Margin="15"/>
 
 
             <ListView ItemsSource="{Binding provinciasss}" HasUnevenRows="True" 
