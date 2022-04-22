@@ -1,21 +1,46 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using TurisTico.ViewModels;
+
+using System.Collections.ObjectModel;
+using System.IO;
+
+using System.Reflection;
+
+using TurisTico.Data;
+using TurisTico.Models;
 using Xamarin.Forms;
-using Xamarin.Forms.Xaml;
+
 
 namespace TurisTico
 {
-    [XamlCompilation(XamlCompilationOptions.Compile)]
+
     public partial class SanJose : ContentPage
     {
+
+        public ObservableCollection<Product> Products { get; set; } = new
+            ObservableCollection<Product>();
         public SanJose()
         {
             InitializeComponent();
-            BindingContext = new LugaresViewModel();
+
+
+
+            //aqui se puede llamar el metodo creados en repostirio (get by id )
+
+
+            DatosRepository repos = new DatosRepository();
+            foreach (var datos in repos.ListProduct())
+            {
+                Products.Add(datos);
+            }
+            BindingContext = this;
+
+
+
+
+
+
+
+
         }
     }
 }

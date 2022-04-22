@@ -1,0 +1,51 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Collections.ObjectModel;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+using TurisTico.Data;
+using TurisTico.Models;
+using Xamarin.Forms;
+using Xamarin.Forms.Xaml;
+
+namespace TurisTico.View
+{
+    public partial class Guanacaste : ContentPage
+    {
+
+
+        public ObservableCollection<Lugares_Guanacaste> Datos_Gunacaste { get; set; } = new
+           ObservableCollection<Lugares_Guanacaste>();
+
+
+
+
+        public Guanacaste()
+        {
+            InitializeComponent();
+
+            DatosRepository repos2 = new DatosRepository();
+            foreach (var datos2 in repos2.ListGuanacaste())
+            {
+                Datos_Gunacaste.Add(datos2);
+            }
+            BindingContext = this;
+
+
+
+
+
+
+
+
+        }
+
+
+
+
+
+    }
+}
+
+

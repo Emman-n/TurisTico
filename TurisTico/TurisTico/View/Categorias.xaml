@@ -6,7 +6,7 @@
               Padding="5" 
              >
 
-     
+
     <ContentPage.ToolbarItems>
 
 
@@ -34,33 +34,33 @@
         <Grid RowSpacing="10" ColumnSpacing="5" Margin="2">
 
 
-        <Grid.RowDefinitions>
-            <RowDefinition Height="*"></RowDefinition>
-            <RowDefinition Height="*"></RowDefinition>
-            <RowDefinition Height="0"></RowDefinition>
-        </Grid.RowDefinitions>
-        <Grid.ColumnDefinitions>
-            <ColumnDefinition Width="*"></ColumnDefinition>
-            <ColumnDefinition Width="*"></ColumnDefinition>
-        </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="*"></RowDefinition>
+                <RowDefinition Height="*"></RowDefinition>
+                <RowDefinition Height="0"></RowDefinition>
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*"></ColumnDefinition>
+                <ColumnDefinition Width="*"></ColumnDefinition>
+            </Grid.ColumnDefinitions>
 
 
 
-        <Image Grid.Row="0" Grid.Column="0"
+            <Image Grid.Row="0" Grid.Column="0"
            Source="img3.jpg"
            HorizontalOptions="FillAndExpand"
            VerticalOptions="FillAndExpand" 
            Aspect="Fill" 
               
                />
-        <Button Grid.Row="0" Grid.Column="0"
+            <Button Grid.Row="0" Grid.Column="0"
                 x:Name="btnSanJose"
                  Clicked="btnSanJose_Clicked"
           Opacity="0.2"
            HorizontalOptions="FillAndExpand"
            VerticalOptions="FillAndExpand"
            TextColor="White" />
-        <Label Text="Playas" 
+            <Label Text="Playas" 
                TextColor="White"
                Grid.Row="0" Grid.Column="0"
                  HorizontalOptions="Center"
@@ -70,19 +70,19 @@
 
 
 
-        <!--space 2-->
+            <!--space 2-->
 
-        <Image Grid.Row="0" Grid.Column="1"
+            <Image Grid.Row="0" Grid.Column="1"
            Source="img4.jpg"
            HorizontalOptions="FillAndExpand"
            VerticalOptions="FillAndExpand" 
            Aspect="Fill" />
-        <Button Grid.Row="0" Grid.Column="1"
+            <Button Grid.Row="0" Grid.Column="1"
           Opacity="0.2"
            HorizontalOptions="FillAndExpand"
            VerticalOptions="FillAndExpand"
            TextColor="White" />
-        <Label Text="Montanas" 
+            <Label Text="Montanas" 
                TextColor="White"
                Grid.Row="0" Grid.Column="1"
                  HorizontalOptions="Center"
@@ -92,20 +92,20 @@
                />
 
 
-        <!--space 3-->
+            <!--space 3-->
 
 
-        <Image Grid.Row="1" Grid.Column="0"
+            <Image Grid.Row="1" Grid.Column="0"
            Source="img1.jpg"
            HorizontalOptions="FillAndExpand"
            VerticalOptions="FillAndExpand" 
            Aspect="AspectFill" />
-        <Button Grid.Row="1" Grid.Column="0"
+            <Button Grid.Row="1" Grid.Column="0"
           Opacity="0.2"
            HorizontalOptions="FillAndExpand"
            VerticalOptions="FillAndExpand"
            TextColor="White" />
-        <Label Text="Ciudad" 
+            <Label Text="Ciudad" 
                TextColor="White"
                Grid.Row="1" Grid.Column="0"
                  HorizontalOptions="Center"
@@ -115,21 +115,21 @@
                />
 
 
-        <!--space 4-->
+            <!--space 4-->
 
 
 
-        <Image Grid.Row="1" Grid.Column="1"
+            <Image Grid.Row="1" Grid.Column="1"
            Source="img5.jpg"
            HorizontalOptions="FillAndExpand"
            VerticalOptions="FillAndExpand" 
            Aspect="Fill" />
-        <Button Grid.Row="1" Grid.Column="1"
+            <Button Grid.Row="1" Grid.Column="1"
           Opacity="0.2"
            HorizontalOptions="FillAndExpand"
            VerticalOptions="FillAndExpand"
            TextColor="White" />
-        <Label  Grid.Row="1" Grid.Column="1"
+            <Label  Grid.Row="1" Grid.Column="1"
             Text="Bosques" 
                TextColor="White"
                  HorizontalOptions="Center"
@@ -151,7 +151,7 @@
 
 
 
-    </Grid>
+        </Grid>
     </StackLayout>
 
 </ContentPage>

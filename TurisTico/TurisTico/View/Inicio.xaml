@@ -2,83 +2,263 @@
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="TurisTico.View.Inicio">
-    <ContentPage.Content>
-        <StackLayout Margin="20,20,20,20">
+
+    <ContentPage.ToolbarItems>
 
 
-            <Label Text="Provincias"   FontFamily="Dancing"  HorizontalOptions="Center" TextColor="Black" FontSize="35"   Margin="15"/>
+        <ToolbarItem Text="Inico" Order="Primary">
+
+        </ToolbarItem>
+
+        <ToolbarItem Text="Turistico" Order="Primary">
+            <ToolbarItem.Icon>
+                <OnPlatform x:TypeArguments="FileImageSource"
+                        Android="icon.png"/>
+
+            </ToolbarItem.Icon>
+        </ToolbarItem>
 
 
-            <ListView ItemsSource="{Binding provinciasss}" HasUnevenRows="True" 
-                      ItemSelected="ListView_ItemSelected" 
-                      ItemTapped="ListView_ItemTapped">
-                <ListView.ItemTemplate>
-                    <DataTemplate>
-                        <ViewCell>
-                            
-                            
-                            <Grid Padding="10" BackgroundColor="White"
-                                  >
-                                <Grid.RowDefinitions>
-                                    <RowDefinition Height="Auto"/>
-                                    <RowDefinition Height="*"/>
-                                    <RowDefinition Height="0.2*"/>
+    </ContentPage.ToolbarItems>
 
-                                </Grid.RowDefinitions>
-                                <Grid.ColumnDefinitions>
-                                    <ColumnDefinition Width="Auto"/>
-                                    <ColumnDefinition Width="*"/>
-                                    
-                                </Grid.ColumnDefinitions>
-                                
-                                
-                                
-                                
-                                
-                                <Button Grid.Row="0"
-                                        BackgroundColor="White"
-                                       FontSize="20"
-                                       Text="{Binding Nommbre_Provincia}"
-                                       TextColor="Black"
-                                       FontAttributes="Bold"
-                                          x:Name="btnSanJose"
-                        Clicked="btnSanJose_Clicked"
-                                         FontFamily="Dancing"
-                                        />
-                                
-                                <ImageButton Grid.Row="1"
-                                               BackgroundColor="White"
-                                       Source="{Binding Imagen_url}"
-                                       Aspect="AspectFill"
-                                       HeightRequest="200"
-                                       WidthRequest="60"
-                                                               
-                        Clicked="btnSanJose_Clicked"
-                                             />
 
-                                <Button Grid.Row="2"
-                                          BackgroundColor="White"
-                                       Text="{Binding descripcion}"
-                                         FontSize="15"
-                                       TextColor="Black"
-                                      
-                                       FontAttributes="Bold"
-                                       VerticalOptions="FillAndExpand"
-                                                           
-                        Clicked="btnSanJose_Clicked"
-                                        />
+    <StackLayout>
+
+        <Label Text="Explore Costa Rica!"   FontFamily="Dancing" HorizontalOptions="Center" TextColor="Black" FontSize="30"   Margin="15"/>
+
+
+        <Grid RowSpacing="10" ColumnSpacing="5" Margin="2">
+
+
+            <Grid.RowDefinitions>
+                <RowDefinition Height="*"></RowDefinition>
+                <RowDefinition Height="*"></RowDefinition>
+                <RowDefinition Height="*"></RowDefinition>
+                <RowDefinition Height="*"></RowDefinition>
+                <RowDefinition Height="0"></RowDefinition>
+            </Grid.RowDefinitions>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*"></ColumnDefinition>
+                <ColumnDefinition Width="*"></ColumnDefinition>
+            </Grid.ColumnDefinitions>
 
 
 
+            <Image Grid.Row="0" Grid.Column="0"
+           Source="Puntarenas.jpg"
+           HorizontalOptions="FillAndExpand"
+           VerticalOptions="FillAndExpand" 
+           Aspect="Fill" 
+              
+               />
+            <Button Grid.Row="0" Grid.Column="0"
+               
+                   x:Name="btnPuntarenas"
+                 Clicked="btnPuntarenas_Clicked"   
+                    
+          Opacity="0.2"
+           HorizontalOptions="FillAndExpand"
+           VerticalOptions="FillAndExpand"
+           TextColor="White"
+                    
+                    Margin="0"/>
+            <Label Text="Puntarenas" 
+               TextColor="White"
+               Grid.Row="0" Grid.Column="0"
+                 HorizontalOptions="Center"
+               VerticalOptions="Center" 
+                FontSize="30"
+                FontFamily="Dancing"/>
 
-                            </Grid>  
-                        </ViewCell>
-                    </DataTemplate>
-                </ListView.ItemTemplate>
-                
-            </ListView>
-        </StackLayout>
-    </ContentPage.Content>
+
+
+            <!--space 2-->
+
+            <Image Grid.Row="0" Grid.Column="1"
+           Source="Guanacaste.jpg"
+           HorizontalOptions="FillAndExpand"
+           VerticalOptions="FillAndExpand" 
+           Aspect="Fill" />
+            <Button Grid.Row="0" Grid.Column="1"
+                       x:Name="btnGuanacaste"
+                 Clicked="btnGuanacaste_Clicked"   
+                    
+                    
+          Opacity="0.2"
+           HorizontalOptions="FillAndExpand"
+           VerticalOptions="FillAndExpand"
+           TextColor="White" />
+            <Label Text="Guanacaste" 
+               TextColor="White"
+               Grid.Row="0" Grid.Column="1"
+                 HorizontalOptions="Center"
+               VerticalOptions="Center" 
+                FontSize="30"
+                 FontFamily="Dancing"
+               />
+
+
+            <!--space 3-->
+
+
+            <Image Grid.Row="1" Grid.Column="0"
+           Source="Alajuela.jpg"
+           HorizontalOptions="FillAndExpand"
+           VerticalOptions="FillAndExpand" 
+           Aspect="AspectFill" />
+            <Button Grid.Row="1" Grid.Column="0"
+          Opacity="0.2"
+           HorizontalOptions="FillAndExpand"
+           VerticalOptions="FillAndExpand"
+           TextColor="White" />
+            <Label Text="Alajuela" 
+               TextColor="White"
+               Grid.Row="1" Grid.Column="0"
+                 HorizontalOptions="Center"
+               VerticalOptions="Center" 
+                FontSize="30"
+                 FontFamily="Dancing"
+               />
+
+
+            <!--space 4-->
+
+
+
+            <Image Grid.Row="1" Grid.Column="1"
+           Source="Limon.jpg"
+           HorizontalOptions="FillAndExpand"
+           VerticalOptions="FillAndExpand" 
+           Aspect="Fill" />
+            <Button Grid.Row="1" Grid.Column="1"
+          Opacity="0.2"
+           HorizontalOptions="FillAndExpand"
+           VerticalOptions="FillAndExpand"
+           TextColor="White" />
+            <Label  Grid.Row="1" Grid.Column="1"
+            Text="Limon" 
+               TextColor="White"
+                 HorizontalOptions="Center"
+               VerticalOptions="Center" 
+                FontSize="30"
+                  FontFamily="Dancing"
+                FontAttributes="Bold"
+                />
+
+
+
+
+            <!--space 5-->
+
+
+
+            <Image Grid.Row="2" Grid.Column="1"
+           Source="Heredia.jpg"
+           HorizontalOptions="FillAndExpand"
+           VerticalOptions="FillAndExpand" 
+           Aspect="Fill" />
+            <Button Grid.Row="2" Grid.Column="1"
+          Opacity="0.2"
+           HorizontalOptions="FillAndExpand"
+           VerticalOptions="FillAndExpand"
+           TextColor="White" />
+            <Label  Grid.Row="2" Grid.Column="1"
+            Text="Heredia" 
+               TextColor="White"
+                 HorizontalOptions="Center"
+               VerticalOptions="Center" 
+                FontSize="30"
+                  FontFamily="Dancing"
+                FontAttributes="Bold"
+                />
+
+
+
+
+
+
+            <!--space 6-->
+
+
+
+            <Image Grid.Row="2" Grid.Column="0"
+           Source="Cartago.jpg"
+           HorizontalOptions="FillAndExpand"
+           VerticalOptions="FillAndExpand" 
+           Aspect="Fill" />
+            <Button Grid.Row="2" Grid.Column="0"
+          Opacity="0.2"
+           HorizontalOptions="FillAndExpand"
+           VerticalOptions="FillAndExpand"
+           TextColor="White" />
+            <Label  Grid.Row="2" Grid.Column="0"
+            Text="Cartago" 
+               TextColor="White"
+                 HorizontalOptions="Center"
+               VerticalOptions="Center" 
+                FontSize="30"
+                  FontFamily="Dancing"
+                FontAttributes="Bold"
+                />
+
+
+
+            <!--space 7-->
+
+
+
+            <Image Grid.Row="3" Grid.Column="0"
+           Source="SanJose.jpg"
+           HorizontalOptions="FillAndExpand"
+           VerticalOptions="FillAndExpand" 
+           Aspect="Fill" />
+            <Button Grid.Row="3" Grid.Column="0"
+                     x:Name="btnSanJose"
+                 Clicked="btnSanJose_Clicked"
+          Opacity="0.2"
+           HorizontalOptions="FillAndExpand"
+           VerticalOptions="FillAndExpand"
+           TextColor="White" />
+            <Label  Grid.Row="3" Grid.Column="0"
+            Text="San Jose" 
+               TextColor="White"
+                 HorizontalOptions="Center"
+               VerticalOptions="Center" 
+                FontSize="30"
+                  FontFamily="Dancing"
+                FontAttributes="Bold"
+                />
+
+
+            <!--space 8-->
+
+
+
+            <Image Grid.Row="3" Grid.Column="1"
+           Source="img5.jpg"
+           HorizontalOptions="FillAndExpand"
+           VerticalOptions="FillAndExpand" 
+           Aspect="Fill" />
+            <Button Grid.Row="3" Grid.Column="1"
+          Opacity="0.2"
+           HorizontalOptions="FillAndExpand"
+           VerticalOptions="FillAndExpand"
+           TextColor="White" />
+            <Label  Grid.Row="3" Grid.Column="1"
+            Text="Categorias" 
+               TextColor="White"
+                 HorizontalOptions="Center"
+               VerticalOptions="Center" 
+                FontSize="30"
+                  FontFamily="Dancing"
+                FontAttributes="Bold"
+                />
+
+
+
+
+
+        </Grid>
+    </StackLayout>
+
 </ContentPage>
-
- 

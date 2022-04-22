@@ -3,7 +3,6 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using TurisTico.ViewModels;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 
@@ -15,7 +14,7 @@ namespace TurisTico.View
         public Categorias()
         {
             InitializeComponent();
-            BindingContext = new LugaresViewModel();
+
         }
 
 
@@ -23,7 +22,7 @@ namespace TurisTico.View
         private async void btnSanJose_Clicked(object sender, EventArgs e)
         {
             await Navigation.PushAsync(new SanJose());
-            BindingContext = new LugaresViewModel();
+
 
         }
     }
