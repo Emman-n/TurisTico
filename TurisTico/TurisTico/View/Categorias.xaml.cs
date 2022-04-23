@@ -17,6 +17,11 @@ namespace TurisTico.View
 
         }
 
+        private async void ToolbarItem_Clicked_Inicio(object sender, EventArgs e)
+        {
+            await Navigation.PushAsync(new Inicio());
+        }
+
 
         //Conexion a lista de lugares
         private async void btnSanJose_Clicked(object sender, EventArgs e)

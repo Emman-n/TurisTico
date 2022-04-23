@@ -10,7 +10,8 @@
     <ContentPage.ToolbarItems>
 
 
-        <ToolbarItem Text="Inico" Order="Primary">
+
+        <ToolbarItem Text="Inico" Order="Primary" Clicked="ToolbarItem_Clicked_Inicio">
 
         </ToolbarItem>
 

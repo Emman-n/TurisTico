@@ -5,7 +5,7 @@
     <ContentPage.ToolbarItems>
 
 
-        <ToolbarItem Text="Inico" Order="Primary" >
+        <ToolbarItem Text="Inico" Order="Primary" Clicked="ToolbarItem_Clicked_Inicio">
 
         </ToolbarItem>
 
@@ -28,13 +28,30 @@
         <CollectionView   ItemsSource="{Binding Datos_Motanas}" >
             <CollectionView.ItemTemplate>
                 <DataTemplate  >
-                    <Frame Padding="2"
+                    <Frame Padding="5"
                     
                        IsClippedToBounds="False"
-                       BackgroundColor="#333333"
+                              BackgroundColor="White"
                        >
 
+
                         <Grid HeightRequest="200" BackgroundColor="#E6E6E6"  >
+                            <Grid.GestureRecognizers>
+                                <TapGestureRecognizer Tapped="TapGestureRecognizer_Info_Lugar" >
+
+
+                                </TapGestureRecognizer>
+                            </Grid.GestureRecognizers>
+
+
+
+
+
+
+
+
+
+
                             <Grid.ColumnDefinitions  >
                                 <ColumnDefinition Width=".1*"/>
                                 <ColumnDefinition Width=".9*"/>

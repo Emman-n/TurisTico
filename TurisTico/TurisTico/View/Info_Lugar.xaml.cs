@@ -16,5 +16,12 @@ namespace TurisTico.View
         {
             InitializeComponent();
         }
+
+
+        private async void ToolbarItem_Clicked_Inicio(object sender, EventArgs e)
+        {
+            await Navigation.PushAsync(new Inicio());
+        }
+
     }
 }

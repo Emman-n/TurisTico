@@ -41,11 +41,16 @@ namespace TurisTico.View
 
         }
 
-
-
-
-
+        private async void ToolbarItem_Clicked_Inicio(object sender, EventArgs e)
+        {
+            await Navigation.PushAsync(new Inicio());
+        }
+        private async void TapGestureRecognizer_Info_Lugar(object sender, EventArgs e)
+        {
+            await Navigation.PushAsync(new Info_Lugar());
+        }
     }
-}
 
+
+}
 

@@ -8,9 +8,6 @@
     <ContentPage.ToolbarItems>
 
 
-        <ToolbarItem Text="Inico" Order="Primary">
-
-        </ToolbarItem>
 
         <ToolbarItem Text="Turistico" Order="Primary">
             <ToolbarItem.Icon>

@@ -45,5 +45,10 @@ namespace TurisTico.View
             await Navigation.PushAsync(new Categorias());
 
         }
+
+        private async void ToolbarItem_Clicked_Inicio(object sender, EventArgs e)
+        {
+            await Navigation.PushAsync(new Inicio());
+        }
     }
 }

@@ -7,8 +7,7 @@
 
     <ContentPage.ToolbarItems>
 
-
-        <ToolbarItem Text="Inico" Order="Primary">
+        <ToolbarItem Text="Inico" Order="Primary" Clicked="ToolbarItem_Clicked_Inicio">
 
         </ToolbarItem>
 
@@ -40,14 +39,14 @@
                 <RowDefinition Height="*"/>
                 <RowDefinition Height="*"/>
                 <RowDefinition Height="*"/>
-                
+
 
             </Grid.RowDefinitions>
-             
 
 
 
- 
+
+
             <Label Grid.Row="0"
                                        BackgroundColor="Red"
                                        FontSize="20"
