@@ -30,5 +30,29 @@ namespace TurisTico.View
 
 
         }
+
+        private async void btnPlayas_Clicked(object sender, EventArgs e)
+        {
+            await Navigation.PushAsync(new Playas());
+
+        }
+
+        private async void btnMotanas_Clicked(object sender, EventArgs e)
+        {
+            await Navigation.PushAsync(new Montana());
+
+        }
+
+        private async void btnCiudad_Clicked(object sender, EventArgs e)
+        {
+            await Navigation.PushAsync(new Ciudad());
+
+        }
+
+        private async void btnBosques_Clicked(object sender, EventArgs e)
+        {
+            await Navigation.PushAsync(new Bosque());
+
+        }
     }
 }

@@ -29,7 +29,7 @@
 
     <StackLayout>
 
-        <Label Text="Categorias"   FontFamily="Dancing" HorizontalOptions="Center" TextColor="Black" FontSize="30"   Margin="15"/>
+        <Label Text="Categorias"   FontFamily="Dancing" HorizontalOptions="Center" TextColor="Black" FontSize="25"   Margin="15"/>
 
 
         <Grid RowSpacing="10" ColumnSpacing="5" Margin="2">
@@ -55,8 +55,8 @@
               
                />
             <Button Grid.Row="0" Grid.Column="0"
-                x:Name="btnSanJose"
-                 Clicked="btnSanJose_Clicked"
+                x:Name="btnPlayas"
+                 Clicked="btnPlayas_Clicked"
           Opacity="0.2"
            HorizontalOptions="FillAndExpand"
            VerticalOptions="FillAndExpand"
@@ -79,6 +79,9 @@
            VerticalOptions="FillAndExpand" 
            Aspect="Fill" />
             <Button Grid.Row="0" Grid.Column="1"
+                    
+                      x:Name="btnMotanas"
+                 Clicked="btnMotanas_Clicked"
           Opacity="0.2"
            HorizontalOptions="FillAndExpand"
            VerticalOptions="FillAndExpand"
@@ -102,6 +105,8 @@
            VerticalOptions="FillAndExpand" 
            Aspect="AspectFill" />
             <Button Grid.Row="1" Grid.Column="0"
+                      x:Name="btnCiudad"
+                 Clicked="btnCiudad_Clicked"
           Opacity="0.2"
            HorizontalOptions="FillAndExpand"
            VerticalOptions="FillAndExpand"
@@ -126,6 +131,9 @@
            VerticalOptions="FillAndExpand" 
            Aspect="Fill" />
             <Button Grid.Row="1" Grid.Column="1"
+                    
+                      x:Name="btnBosques"
+                 Clicked="btnBosques_Clicked"
           Opacity="0.2"
            HorizontalOptions="FillAndExpand"
            VerticalOptions="FillAndExpand"

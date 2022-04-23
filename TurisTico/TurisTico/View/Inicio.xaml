@@ -24,10 +24,10 @@
 
     <StackLayout>
 
-        <Label Text="Explore Costa Rica!"   FontFamily="Dancing" HorizontalOptions="Center" TextColor="Black" FontSize="30"   Margin="15"/>
+        <Label Text="Explore Costa Rica!"   FontFamily="Dancing" HorizontalOptions="Center" TextColor="Black" FontSize="25"   Margin="15"/>
 
 
-        <Grid RowSpacing="10" ColumnSpacing="5" Margin="2">
+        <Grid RowSpacing="3" ColumnSpacing="3" Margin="1">
 
 
             <Grid.RowDefinitions>
@@ -59,7 +59,8 @@
           Opacity="0.2"
            HorizontalOptions="FillAndExpand"
            VerticalOptions="FillAndExpand"
-           TextColor="White"
+
+           TextColor="#C1DBDBDB"
                     
                     Margin="0"/>
             <Label Text="Puntarenas" 
@@ -67,7 +68,7 @@
                Grid.Row="0" Grid.Column="0"
                  HorizontalOptions="Center"
                VerticalOptions="Center" 
-                FontSize="30"
+                FontSize="25"
                 FontFamily="Dancing"/>
 
 
@@ -93,7 +94,7 @@
                Grid.Row="0" Grid.Column="1"
                  HorizontalOptions="Center"
                VerticalOptions="Center" 
-                FontSize="30"
+                FontSize="25"
                  FontFamily="Dancing"
                />
 
@@ -116,7 +117,7 @@
                Grid.Row="1" Grid.Column="0"
                  HorizontalOptions="Center"
                VerticalOptions="Center" 
-                FontSize="30"
+                FontSize="25"
                  FontFamily="Dancing"
                />
 
@@ -140,7 +141,7 @@
                TextColor="White"
                  HorizontalOptions="Center"
                VerticalOptions="Center" 
-                FontSize="30"
+                FontSize="25"
                   FontFamily="Dancing"
                 FontAttributes="Bold"
                 />
@@ -167,7 +168,7 @@
                TextColor="White"
                  HorizontalOptions="Center"
                VerticalOptions="Center" 
-                FontSize="30"
+                FontSize="25"
                   FontFamily="Dancing"
                 FontAttributes="Bold"
                 />
@@ -196,7 +197,7 @@
                TextColor="White"
                  HorizontalOptions="Center"
                VerticalOptions="Center" 
-                FontSize="30"
+                FontSize="25"
                   FontFamily="Dancing"
                 FontAttributes="Bold"
                 />
@@ -224,7 +225,7 @@
                TextColor="White"
                  HorizontalOptions="Center"
                VerticalOptions="Center" 
-                FontSize="30"
+                FontSize="25"
                   FontFamily="Dancing"
                 FontAttributes="Bold"
                 />
@@ -254,7 +255,7 @@
                TextColor="White"
                  HorizontalOptions="Center"
                VerticalOptions="Center" 
-                FontSize="30"
+                FontSize="25"
                   FontFamily="Dancing"
                 FontAttributes="Bold"
                 />

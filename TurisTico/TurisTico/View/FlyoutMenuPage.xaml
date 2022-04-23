@@ -10,11 +10,12 @@
         <ListView x:Name="listview" x:FieldModifier="public">
             <ListView.ItemsSource>
                 <x:Array Type="{x:Type local:FlyoutItemPage}">
-                    <local:FlyoutItemPage Title="Inicio" IconSource="https://toppng.com/uploads/preview/home-icon-home-house-icon-house-icon-free-11553508857ouiuhg9nsa.png" TargetPage="{x:Type local1:Inicio}"/>
+                    <local:FlyoutItemPage Title="Inicio" TargetPage="{x:Type local1:Inicio}"/>
                     <local:FlyoutItemPage Title="Categorias" IconSource="http://cdn.onlinewebfonts.com/svg/img_87908.png" TargetPage="{x:Type local1:Categorias}"/>
-                    <local:FlyoutItemPage Title="Sobre nosotros" IconSource="http://cdn.onlinewebfonts.com/svg/img_87908.png" TargetPage="{x:Type local1:AboutUS}"/>
-                    <local:FlyoutItemPage Title="Cerrar sesion" IconSource="http://cdn.onlinewebfonts.com/svg/img_119401.png" TargetPage="{x:Type local1:LoginPage}"/>
-                    </x:Array>
+                    <local:FlyoutItemPage Title="Clima" IconSource="http://cdn.onlinewebfonts.com/svg/img_87908.png" TargetPage="{x:Type local1:Categorias}"/>
+
+
+                </x:Array>
 
             </ListView.ItemsSource>
             <ListView.ItemTemplate>

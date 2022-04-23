@@ -25,8 +25,22 @@ namespace TurisTico.Data
             _database.CreateTable<Lugares_Guanacaste>();
             _database.CreateTable<Lugares_Playas>();
             _database.CreateTable<Lugares_Montanas>();
+            _database.CreateTable<Lugares_Bosque>();
+            _database.CreateTable<Lugares_Ciudad>();
 
         }
+
+        public List<Lugares_Ciudad> List_Ciudad()
+        {
+            return _database.Table<Lugares_Ciudad>().ToList();
+        }
+
+
+        public List<Lugares_Bosque> ListBosque()
+        {
+            return _database.Table<Lugares_Bosque>().ToList();
+        }
+
 
 
         public List<Lugares_Montanas> ListMnotanas()
