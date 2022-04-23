@@ -240,6 +240,11 @@
            VerticalOptions="FillAndExpand" 
            Aspect="Fill" />
             <Button Grid.Row="3" Grid.Column="1"
+                      x:Name="btnCategoria"
+                 Clicked="btnCategoria_Clicked"   
+                    
+                    
+                    
           Opacity="0.2"
            HorizontalOptions="FillAndExpand"
            VerticalOptions="FillAndExpand"

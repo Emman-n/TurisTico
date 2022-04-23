@@ -1,0 +1,94 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="TurisTico.View.Info_Lugar">
+
+
+
+    <ContentPage.ToolbarItems>
+
+
+        <ToolbarItem Text="Inico" Order="Primary">
+
+        </ToolbarItem>
+
+        <ToolbarItem Text="Turistico" Order="Primary">
+            <ToolbarItem.Icon>
+                <OnPlatform x:TypeArguments="FileImageSource"
+                        Android="icon.png"/>
+
+            </ToolbarItem.Icon>
+        </ToolbarItem>
+
+
+    </ContentPage.ToolbarItems>
+
+
+
+
+
+    <StackLayout  >
+
+
+        <Label Text="Informacion del Lugar"  FontFamily="Dancing" HorizontalOptions="Center" TextColor="Black" FontSize="25"   Margin="15"/>
+
+
+
+        <Grid  Margin="2" Padding="8" BackgroundColor="White"
+                                  >
+            <Grid.RowDefinitions>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+                <RowDefinition Height="*"/>
+                
+
+            </Grid.RowDefinitions>
+             
+
+
+
+ 
+            <Label Grid.Row="0"
+                                       BackgroundColor="Red"
+                                       FontSize="20"
+                                       Text="Fuuuuuuuucksssssssssssssssssssssssssssssssss
+                   asdffffasdfasdfasdf
+                   
+                   
+                   asdfasdfaasdfasdf"
+                                       TextColor="Black"
+                                        x:Name="btnSanJose"
+                                    HorizontalOptions="Center"
+                   
+                   
+                   
+                                         />
+
+            <Label Grid.Row="1"
+                                       BackgroundColor="Red"
+                                        Text="Fuuuuuuuuck"
+                                
+                                       HeightRequest="200"
+                                       WidthRequest="200"
+                                                               
+                                     
+                                             />
+
+            <Label Grid.Row="2"
+                          Text="Fuuuuuuuuck"
+                                          BackgroundColor="#B00000"
+                                      
+                                         FontSize="10"
+                                       TextColor="Black"
+                                      
+                                       FontAttributes="Bold"
+                                       VerticalOptions="FillAndExpand"
+                                    
+                                        />
+
+
+        </Grid>
+    </StackLayout >
+
+
+</ContentPage>

@@ -39,5 +39,11 @@ namespace TurisTico.View
             await Navigation.PushAsync(new Guanacaste());
 
         }
+
+        private async void btnCategoria_Clicked(object sender, EventArgs e)
+        {
+            await Navigation.PushAsync(new Categorias());
+
+        }
     }
 }

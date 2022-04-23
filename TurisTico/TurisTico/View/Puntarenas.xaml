@@ -22,6 +22,9 @@
 
     <StackLayout >
 
+
+
+
         <Label Text="Opciones en Puntarenas"  FontFamily="Dancing" HorizontalOptions="Center" TextColor="Black" FontSize="30"   Margin="15"/>
 
 
@@ -35,6 +38,13 @@
                        >
 
                         <Grid HeightRequest="200" BackgroundColor="#E6E6E6"  >
+                            <Grid.GestureRecognizers>
+                                <TapGestureRecognizer Tapped="TapGestureRecognizer_Info_Lugar" >
+
+
+                                </TapGestureRecognizer>
+                            </Grid.GestureRecognizers>
+
                             <Grid.ColumnDefinitions  >
                                 <ColumnDefinition Width=".1*"/>
                                 <ColumnDefinition Width=".9*"/>
@@ -61,6 +71,7 @@
                         />
 
                             <Label
+                                
                        
                         FontAttributes="Bold"
                         Grid.Column="3"
@@ -79,7 +90,6 @@
                         FontSize="15"
                         Text="{Binding Ubicacion }"                         
                         FontFamily="Noto" />
-
 
                             <Label
                         TextColor="Black"
