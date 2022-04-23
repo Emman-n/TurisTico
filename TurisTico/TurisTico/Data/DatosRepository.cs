@@ -23,12 +23,20 @@ namespace TurisTico.Data
             _database.CreateTable<Product>();
             _database.CreateTable<Lugares_Puntarenas>();
             _database.CreateTable<Lugares_Guanacaste>();
+            _database.CreateTable<Lugares_Alajuela>();
             _database.CreateTable<Lugares_Playas>();
             _database.CreateTable<Lugares_Montanas>();
             _database.CreateTable<Lugares_Bosque>();
             _database.CreateTable<Lugares_Ciudad>();
 
         }
+
+
+        public List<Lugares_Alajuela> ListAlajuela()
+        {
+            return _database.Table<Lugares_Alajuela>().ToList();
+        }
+
 
         public List<Lugares_Ciudad> List_Ciudad()
         {

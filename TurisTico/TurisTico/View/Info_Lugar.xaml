@@ -36,9 +36,13 @@
         <Grid  Margin="2" Padding="8" BackgroundColor="White"
                                   >
             <Grid.RowDefinitions>
+                <RowDefinition Height="50"/>
                 <RowDefinition Height="*"/>
-                <RowDefinition Height="*"/>
-                <RowDefinition Height="*"/>
+                <RowDefinition Height="40"/>
+                <RowDefinition Height="40"/>
+                <RowDefinition Height="90"/>
+                <RowDefinition Height="40"/>
+
 
 
             </Grid.RowDefinitions>
@@ -48,41 +52,89 @@
 
 
             <Label Grid.Row="0"
-                                       BackgroundColor="Red"
-                                       FontSize="20"
-                                       Text="Fuuuuuuuucksssssssssssssssssssssssssssssssss
-                   asdffffasdfasdfasdf
-                   
-                   
-                   asdfasdfaasdfasdf"
+                                         Text="Parque Marino Del Pacifico"
+                                          BackgroundColor="White"
+                                      
+                                         FontSize="20"
                                        TextColor="Black"
-                                        x:Name="btnSanJose"
-                                    HorizontalOptions="Center"
-                   
+                                      
+                                     HeightRequest="100"
+                                       HorizontalOptions="Center"
                    
                    
                                          />
 
-            <Label Grid.Row="1"
-                                       BackgroundColor="Red"
-                                        Text="Fuuuuuuuuck"
-                                
-                                       HeightRequest="200"
+            <Image Grid.Row="1"
+                                       BackgroundColor="White"
+                                        Source="lugar5.jpg"                                
+                                       HeightRequest="400"
                                        WidthRequest="200"
-                                                               
+                                               HorizontalOptions="FillAndExpand"
+           VerticalOptions="FillAndExpand" 
+           Aspect="AspectFill"                
                                      
                                              />
 
             <Label Grid.Row="2"
-                          Text="Fuuuuuuuuck"
-                                          BackgroundColor="#B00000"
+                          Text=" Ubicacion : Puntarenas
+                                 
+                   
+                   
+                   "
+                                          BackgroundColor="White"
                                       
-                                         FontSize="10"
+                                         FontSize="17"
                                        TextColor="Black"
                                       
-                                       FontAttributes="Bold"
-                                       VerticalOptions="FillAndExpand"
                                     
+                                     
+                                        />
+
+            <Label Grid.Row="3"
+                          Text=" Precio : 50 por noche
+                                 
+                   
+                   
+                   "
+                                          BackgroundColor="White"
+                                      
+                                         FontSize="17"
+                                       TextColor="Black"
+                                      
+                                    
+                                     
+                                        />
+
+
+            <Label Grid.Row="4"
+                          Text="Descripcion : se encuentra en el departamento de Puntarenas (Pacifico Central) es un hermoso parque de playa donde cuando la marea baja se une una isla al continente y forma la cola de una ballena.
+                                 
+                   
+                   
+                   "
+                                          BackgroundColor="White"
+                                      
+                                         FontSize="17"
+                                       TextColor="Black"
+                                      
+                                    
+                                     
+                                        />
+
+
+            <Label Grid.Row="5"
+                          Text="Contactos : 855 275 5071
+                                 
+                   
+                   
+                   "
+                                          BackgroundColor="White"
+                                      
+                                         FontSize="17"
+                                       TextColor="Black"
+                                      
+                                    
+                                     
                                         />
 
 

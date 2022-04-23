@@ -50,5 +50,11 @@ namespace TurisTico.View
         {
             await Navigation.PushAsync(new Inicio());
         }
+
+        private async void btnAlajuela_Clicked(object sender, EventArgs e)
+        {
+            await Navigation.PushAsync(new Alajuela());
+
+        }
     }
 }

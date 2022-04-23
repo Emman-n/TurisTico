@@ -5,12 +5,8 @@ using System.Text;
 
 namespace TurisTico.Models
 {
-
-
-    [Table("tbl_Playas")]
-    public class Lugares_Playas
+    public class Lugares_Alajuela
     {
-
 
         [AutoIncrement, PrimaryKey]
         public int Id { get; set; }

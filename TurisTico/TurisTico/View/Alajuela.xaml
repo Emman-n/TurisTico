@@ -1,0 +1,119 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="TurisTico.View.Alajuela">
+    <ContentPage.ToolbarItems>
+
+
+
+        <ToolbarItem Text="Inico" Order="Primary" Clicked="ToolbarItem_Clicked_Inicio">
+
+        </ToolbarItem>
+
+        <ToolbarItem Text="Turistico" Order="Primary">
+            <ToolbarItem.Icon>
+                <OnPlatform x:TypeArguments="FileImageSource"
+                        Android="icon.png"/>
+
+            </ToolbarItem.Icon>
+        </ToolbarItem>
+
+
+    </ContentPage.ToolbarItems>
+
+    <StackLayout >
+
+        <Label Text="Opciones en Alajuela"  FontFamily="Dancing" HorizontalOptions="Center" TextColor="Black" FontSize="30"   Margin="15"/>
+
+
+        <CollectionView   ItemsSource="{Binding Datos_Alajuela }" >
+            <CollectionView.ItemTemplate>
+                <DataTemplate  >
+                    <Frame Padding="5"
+                    
+                       IsClippedToBounds="False"
+                              BackgroundColor="White"
+                       >
+
+
+                        <Grid HeightRequest="200" BackgroundColor="#E6E6E6"  >
+                            <Grid.GestureRecognizers>
+                                <TapGestureRecognizer Tapped="TapGestureRecognizer_Info_Lugar" >
+
+
+                                </TapGestureRecognizer>
+                            </Grid.GestureRecognizers>
+
+
+
+                            <Grid.ColumnDefinitions  >
+                                <ColumnDefinition Width=".1*"/>
+                                <ColumnDefinition Width=".9*"/>
+                                <ColumnDefinition Width=".10*"/>
+                            </Grid.ColumnDefinitions>
+                            <Grid.RowDefinitions >
+                                <RowDefinition Height=".9*"/>
+                                <RowDefinition Height=".9*"/>
+
+                            </Grid.RowDefinitions>
+
+
+                            <Image
+                        Grid.RowSpan="5"
+                         Grid.Column="1"
+
+                        Source="{Binding Image_Lugar}"
+                        
+                         HorizontalOptions="FillAndExpand"
+                          VerticalOptions="FillAndExpand" 
+                        Aspect="Fill"
+                        
+                        
+                        />
+
+                            <Label
+                       
+                        FontAttributes="Bold"
+                        Grid.Column="3"
+                        Grid.Row="1"
+                        FontSize="15"
+                        Text= "{Binding Nombre }"      
+                        VerticalOptions="Center"  
+                        TextColor="Black"
+                        FontFamily="Noto"   />
+
+                            <Label
+                        TextColor="Black"
+                        FontAttributes="Bold"
+                        Grid.Row="2"
+                        Grid.Column="3"
+                        FontSize="15"
+                        Text="{Binding Ubicacion }"                         
+                        FontFamily="Noto" />
+
+
+                            <Label
+                        TextColor="Black"
+                        FontAttributes="Bold"
+                        Grid.Row="3"
+                        Grid.Column="3"
+                        FontSize="15"
+                        Text="{Binding Precio_Lugar }"                         
+                        FontFamily="Noto" />
+
+
+
+                        </Grid>
+
+                    </Frame>
+
+
+
+
+                </DataTemplate>
+            </CollectionView.ItemTemplate>
+        </CollectionView>
+    </StackLayout>
+
+</ContentPage>
+
