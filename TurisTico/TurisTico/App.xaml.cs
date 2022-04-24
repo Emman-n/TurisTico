@@ -1,9 +1,7 @@
-﻿using System;
-using System.IO;
+﻿using System.IO;
 using System.Reflection;
 using TurisTico.Data;
 using Xamarin.Forms;
-using Xamarin.Forms.Xaml;
 
 
 [assembly: ExportFont("NotoSans-Regular.ttf", Alias = "Noto")]

@@ -1,10 +1,10 @@
 ﻿using SQLite;
-using System;
-using System.Collections.Generic;
-using System.Text;
 
 namespace TurisTico.Models
 {
+
+    [Table("tbl_SanJose")]
+
     public class Lugares_Ciudad
     {
         [AutoIncrement, PrimaryKey]

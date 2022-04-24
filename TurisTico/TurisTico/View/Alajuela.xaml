@@ -36,7 +36,7 @@
                        >
 
 
-                        <Grid HeightRequest="200" BackgroundColor="#E6E6E6"  >
+                        <Grid HeightRequest="250" BackgroundColor="#E6E6E6"  >
                             <Grid.GestureRecognizers>
                                 <TapGestureRecognizer Tapped="TapGestureRecognizer_Info_Lugar" >
 

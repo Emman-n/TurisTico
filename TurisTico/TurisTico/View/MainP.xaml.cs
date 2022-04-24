@@ -1,9 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using TurisTico.Models;
 using Xamarin.Forms;
 
@@ -16,7 +11,7 @@ namespace TurisTico
             InitializeComponent();
             flyout.listview.ItemSelected += OnSelectedItem;
             ToolbarItem item = new ToolbarItem();
-           
+
 
         }
 

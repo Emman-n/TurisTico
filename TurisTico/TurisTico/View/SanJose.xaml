@@ -25,10 +25,10 @@
 
     <StackLayout >
 
-        <Label Text="Opciones en Guanacaste"  FontFamily="Dancing" HorizontalOptions="Center" TextColor="Black" FontSize="30"   Margin="15"/>
+        <Label Text="Opciones en San Jose"  FontFamily="Dancing" HorizontalOptions="Center" TextColor="Black" FontSize="30"   Margin="15"/>
 
 
-        <CollectionView   ItemsSource="{Binding ListProducti }" >
+        <CollectionView   ItemsSource="{Binding Products_ID }" >
             <CollectionView.ItemTemplate>
                 <DataTemplate  >
                     <Frame Padding="2"

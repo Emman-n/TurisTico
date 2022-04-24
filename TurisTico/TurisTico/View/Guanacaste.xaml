@@ -23,7 +23,7 @@
 
     <StackLayout >
 
-        <Label Text="Opciones en Guanacaste"  FontFamily="Dancing" HorizontalOptions="Center" TextColor="Black" FontSize="30"   Margin="15"/>
+        <Label Text="Lugares en guanacaste"  FontFamily="Dancing" HorizontalOptions="Center" TextColor="Black" FontSize="30"   Margin="15"/>
 
 
         <CollectionView   ItemsSource="{Binding Datos_Gunacaste }" >
@@ -61,18 +61,16 @@
                             <Image
                         Grid.RowSpan="5"
                          Grid.Column="1"
-
                         Source="{Binding Image_Lugar}"
-                        
                          HorizontalOptions="FillAndExpand"
                           VerticalOptions="FillAndExpand" 
-                        Aspect="Fill"
-                        
-                        
+                        Aspect="Fill"              
                         />
 
-                            <Label
-                       
+
+
+
+                            <Label                     
                         FontAttributes="Bold"
                         Grid.Column="3"
                         Grid.Row="1"

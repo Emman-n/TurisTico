@@ -3,9 +3,9 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="TurisTico.View.Info_Lugar">
 
-
-
     <ContentPage.ToolbarItems>
+
+
 
         <ToolbarItem Text="Inico" Order="Primary" Clicked="ToolbarItem_Clicked_Inicio">
 
@@ -22,124 +22,87 @@
 
     </ContentPage.ToolbarItems>
 
+    <StackLayout >
+
+        <Label Text="Informacion Lugar"  FontFamily="Dancing" HorizontalOptions="Center" TextColor="Black" FontSize="30"   Margin="15"/>
+
+
+        <CollectionView   ItemsSource="{Binding Datos_Gunacaste_id }" >
+            <CollectionView.ItemTemplate>
+                <DataTemplate  >
+
+
+                    <Grid  Margin="2" Padding="8"    BackgroundColor="#E6E6E6"  >
 
 
 
-
-    <StackLayout  >
-
-
-        <Label Text="Informacion del Lugar"  FontFamily="Dancing" HorizontalOptions="Center" TextColor="Black" FontSize="25"   Margin="15"/>
-
-
-
-        <Grid  Margin="2" Padding="8" BackgroundColor="White"
-                                  >
-            <Grid.RowDefinitions>
-                <RowDefinition Height="50"/>
-                <RowDefinition Height="*"/>
-                <RowDefinition Height="40"/>
-                <RowDefinition Height="40"/>
-                <RowDefinition Height="90"/>
-                <RowDefinition Height="40"/>
-
-
-
-            </Grid.RowDefinitions>
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="90"/>
+                            <RowDefinition Height="*"/>
+                            <RowDefinition Height="40"/>
 
 
 
 
 
-            <Label Grid.Row="0"
-                                         Text="Parque Marino Del Pacifico"
-                                          BackgroundColor="White"
-                                      
-                                         FontSize="20"
-                                       TextColor="Black"
-                                      
-                                     HeightRequest="100"
-                                       HorizontalOptions="Center"
-                   
-                   
-                                         />
-
-            <Image Grid.Row="1"
-                                       BackgroundColor="White"
-                                        Source="lugar5.jpg"                                
-                                       HeightRequest="400"
-                                       WidthRequest="200"
-                                               HorizontalOptions="FillAndExpand"
-           VerticalOptions="FillAndExpand" 
-           Aspect="AspectFill"                
-                                     
-                                             />
-
-            <Label Grid.Row="2"
-                          Text=" Ubicacion : Puntarenas
-                                 
-                   
-                   
-                   "
-                                          BackgroundColor="White"
-                                      
-                                         FontSize="17"
-                                       TextColor="Black"
-                                      
-                                    
-                                     
-                                        />
-
-            <Label Grid.Row="3"
-                          Text=" Precio : 50 por noche
-                                 
-                   
-                   
-                   "
-                                          BackgroundColor="White"
-                                      
-                                         FontSize="17"
-                                       TextColor="Black"
-                                      
-                                    
-                                     
-                                        />
 
 
-            <Label Grid.Row="4"
-                          Text="Descripcion : se encuentra en el departamento de Puntarenas (Pacifico Central) es un hermoso parque de playa donde cuando la marea baja se une una isla al continente y forma la cola de una ballena.
-                                 
-                   
-                   
-                   "
-                                          BackgroundColor="White"
-                                      
-                                         FontSize="17"
-                                       TextColor="Black"
-                                      
-                                    
-                                     
-                                        />
+                        </Grid.RowDefinitions>
 
 
-            <Label Grid.Row="5"
-                          Text="Contactos : 855 275 5071
-                                 
-                   
-                   
-                   "
-                                          BackgroundColor="White"
-                                      
-                                         FontSize="17"
-                                       TextColor="Black"
-                                      
-                                    
-                                     
-                                        />
 
 
-        </Grid>
-    </StackLayout >
+                        <Label  Grid.Row="0"
+                                 BackgroundColor="Red"
+                        FontAttributes="Bold"
+                        Grid.Column="3"
+                        FontSize="15"
+                        Text= "{Binding Nombre }"      
+                        VerticalOptions="Center"  
+                        TextColor="Black"
+                        FontFamily="Noto"   />
 
+
+
+                        <Image Grid.Row="1"
+                            BackgroundColor="Black"
+                            Source="lugar5.jpg"                                
+                            HeightRequest="400"
+                            WidthRequest="500"
+                            HorizontalOptions="FillAndExpand"
+                            VerticalOptions="FillAndExpand" 
+                            Aspect="AspectFill"    />
+
+
+
+
+
+                        <Label Grid.Row="2"
+                        TextColor="Black"
+                        Grid.Column="3"
+                        FontSize="15"
+                        Text="{Binding Ubicacion }"                         
+                        FontFamily="Noto" />
+
+
+                        <Label  Grid.Row="3"
+                        TextColor="Black"
+                        FontAttributes="Bold"
+                        Grid.Column="3"
+                        FontSize="15"
+                        Text="{Binding Precio_Lugar }"                         
+                        FontFamily="Noto" />
+
+
+
+                    </Grid>
+
+
+
+                </DataTemplate>
+            </CollectionView.ItemTemplate>
+        </CollectionView>
+    </StackLayout>
 
 </ContentPage>
+

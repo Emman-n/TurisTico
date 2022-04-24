@@ -1,9 +1,5 @@
-﻿using System;
-
+﻿
 using System.Collections.ObjectModel;
-using System.IO;
-
-using System.Reflection;
 
 using TurisTico.Data;
 using TurisTico.Models;
@@ -16,7 +12,7 @@ namespace TurisTico
     public partial class SanJose : ContentPage
     {
 
-        public ObservableCollection<Product> Products { get; set; } = new
+        public ObservableCollection<Product> Products_ID { get; set; } = new
             ObservableCollection<Product>();
         public SanJose()
         {
@@ -28,17 +24,15 @@ namespace TurisTico
 
 
             DatosRepository repos = new DatosRepository();
-            foreach (var datos in repos.ListProduct())
-            {
-                Products.Add(datos);
-            }
+            var getIDpls = repos.ListProductid(1);
+            Products_ID.Add(getIDpls);
             BindingContext = this;
 
 
 
 
-
-
         }
+
+
     }
 }

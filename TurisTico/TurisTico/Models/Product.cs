@@ -1,7 +1,4 @@
 ﻿using SQLite;
-using System;
-using System.Collections.Generic;
-using System.Text;
 
 namespace TurisTico.Models
 {
@@ -19,7 +16,7 @@ namespace TurisTico.Models
 
         public decimal Precio { get; set; }
 
-        public string Imagen { get; set; }
+        public byte Imagen { get; set; }
     }
 
 

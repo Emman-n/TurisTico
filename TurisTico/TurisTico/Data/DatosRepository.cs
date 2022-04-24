@@ -2,8 +2,8 @@
 using System;
 using System.Collections.Generic;
 using System.IO;
-using System.Text;
 using TurisTico.Models;
+using System.Linq;
 
 namespace TurisTico.Data
 {
@@ -28,6 +28,71 @@ namespace TurisTico.Data
             _database.CreateTable<Lugares_Montanas>();
             _database.CreateTable<Lugares_Bosque>();
             _database.CreateTable<Lugares_Ciudad>();
+            _database.CreateTable<Comentarios>();
+
+
+        }
+
+
+
+        public List<Product> ListProduct()
+        {
+            return _database.Table<Product>().ToList();
+        }
+
+
+
+        public Product ListProductid(int Dato1)
+        {
+
+            var a = _database.Table<Product>().FirstOrDefault(x => x.Id == Dato1);
+
+
+
+
+            return a;
+        }
+
+
+
+        public Lugares_Guanacaste ListProductid_Guanacaste(int Dato1)
+        {
+
+            var a = _database.Table<Lugares_Guanacaste>().FirstOrDefault(x => x.Id == Dato1);
+
+
+
+
+            return a;
+        }
+
+
+
+
+        //public Product ListProductid(int Id)
+        //{
+        //    var dato = from p in _database.Table<Product>()
+        //               where p.Id == Id
+        //               select p;
+
+        //    return dato.FirstOrDefault();
+        //}
+
+
+
+        //public Task<Comentarios> SaveComment(Comentarios comentarios)
+        //{
+
+        //    return _database.InsertA(comentarios);
+
+        //}
+
+
+
+        public List<Comentarios> GetComentarios()
+        {
+            return _database.Table<Comentarios>().ToList();
+
 
         }
 
@@ -57,21 +122,6 @@ namespace TurisTico.Data
         }
 
 
-        public List<Product> ListProduct()
-        {
-            return _database.Table<Product>().ToList();
-        }
-
-
-        public Product ListProductid(int Id)
-        {
-            var dato = from p in _database.Table<Product>()
-                       where p.Id == Id
-                       select p;
-
-            return dato.FirstOrDefault();
-        }
-
 
 
 
@@ -99,6 +149,7 @@ namespace TurisTico.Data
         {
             return _database.Table<Lugares_Playas>().ToList();
         }
+
 
 
     }

@@ -1,7 +1,4 @@
 ﻿using SQLite;
-using System;
-using System.Collections.Generic;
-using System.Text;
 
 namespace TurisTico.Models
 {
@@ -24,7 +21,7 @@ namespace TurisTico.Models
         public string Descripcion_Lugar { get; set; }
 
 
-        public string Image_Lugar { get; set; }
+        public byte Image_Lugar { get; set; }
 
 
     }
