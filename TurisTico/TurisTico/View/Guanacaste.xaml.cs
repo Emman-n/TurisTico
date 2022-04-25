@@ -13,7 +13,6 @@ namespace TurisTico.View
 
         DatosRepository repos = new DatosRepository();
 
-
         public Guanacaste()
         {
             InitializeComponent();
@@ -32,18 +31,39 @@ namespace TurisTico.View
 
 
         }
-        private async void TapGestureRecognizer_Info_Lugar(object sender, EventArgs e)
+        //private async void TapGestureRecognizer_Info_Lugar(object sender, EventArgs e)
+        //{
+
+
+
+        //    //var deviceId = CrossDeviceInfo.Current.Id;
+        //    //var deviceIdResult = new Label();
+
+        //    //deviceIdResult.Text = deviceId;
+
+
+
+        //    //var getIDpls = repos.ListProductid_Guanacaste(1);
+        //    //Datos_Gunacaste.Add(getIDpls);
+        //    //BindingContext = this;
+
+        //    await Navigation.PushAsync(new Info_Lugar());
+
+
+        //}
+
+        private void idFrontG_SelectionChanged(object sender, SelectionChangedEventArgs e)
         {
+            var ok = (Lugares_Guanacaste)e.CurrentSelection;
 
 
-            var getIDpls = repos.ListProductid_Guanacaste(1);
+
+            var getIDpls = repos.ListProductid_Guanacaste(ok.Id);
             Datos_Gunacaste.Add(getIDpls);
             BindingContext = this;
 
-            await Navigation.PushAsync(new Info_Lugar());
-
-
         }
+
     }
 
 

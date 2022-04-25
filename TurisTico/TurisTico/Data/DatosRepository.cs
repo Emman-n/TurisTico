@@ -24,6 +24,7 @@ namespace TurisTico.Data
             _database.CreateTable<Lugares_Puntarenas>();
             _database.CreateTable<Lugares_Guanacaste>();
             _database.CreateTable<Lugares_Alajuela>();
+            _database.CreateTable<Lugares_Limon>();
             _database.CreateTable<Lugares_Playas>();
             _database.CreateTable<Lugares_Montanas>();
             _database.CreateTable<Lugares_Bosque>();
@@ -34,14 +35,11 @@ namespace TurisTico.Data
         }
 
 
-
+        //-----------------SanJose-------------------
         public List<Product> ListProduct()
         {
             return _database.Table<Product>().ToList();
         }
-
-
-
         public Product ListProductid(int Dato1)
         {
 
@@ -54,16 +52,124 @@ namespace TurisTico.Data
         }
 
 
-
+        //-----------------Guanacaste-------------------
         public Lugares_Guanacaste ListProductid_Guanacaste(int Dato1)
         {
 
             var a = _database.Table<Lugares_Guanacaste>().FirstOrDefault(x => x.Id == Dato1);
 
-
-
-
             return a;
+        }
+
+        public List<Lugares_Guanacaste> ListGuanacaste()
+        {
+            return _database.Table<Lugares_Guanacaste>().ToList();
+        }
+
+
+
+
+
+
+
+
+        //-----------------Alajuela-------------------
+
+
+        public List<Lugares_Alajuela> ListAlajuela()
+        {
+            return _database.Table<Lugares_Alajuela>().ToList();
+        }
+
+
+        //public Lugares_Alajuela ListProductid_Alajuela(int Dato1)
+        //{
+
+        //    var a = _database.Table<Lugares_Alajuela>().FirstOrDefault(x => x.Id == Dato1);
+
+        //    return a;
+        //}
+
+        //-----------------Puntareanas-------------------
+
+        public List<Lugares_Puntarenas> ListPuntarenas()
+        {
+            return _database.Table<Lugares_Puntarenas>().ToList();
+        }
+
+        //public Lugares_Puntarenas ListProductid_Puntarenas(int Dato1)
+        //{
+
+        //    var a = _database.Table<Lugares_Puntarenas>().FirstOrDefault(x => x.Id == Dato1);
+
+        //    return a;
+        //}
+
+
+
+        //-----------------Limon-------------------
+
+        public List<Lugares_Limon> ListLimon()
+        {
+            return _database.Table<Lugares_Limon>().ToList();
+        }
+
+        //public Lugares_Puntarenas ListProductid_Puntarenas(int Dato1)
+        //{
+
+        //    var a = _database.Table<Lugares_Puntarenas>().FirstOrDefault(x => x.Id == Dato1);
+
+        //    return a;
+        //}
+
+
+
+
+
+
+
+        public List<Lugares_Ciudad> List_Ciudad()
+        {
+            return _database.Table<Lugares_Ciudad>().ToList();
+        }
+
+
+
+        public List<Lugares_Bosque> ListBosque()
+        {
+            return _database.Table<Lugares_Bosque>().ToList();
+        }
+
+
+
+        public List<Lugares_Montanas> ListMnotanas()
+        {
+            return _database.Table<Lugares_Montanas>().ToList();
+        }
+
+
+
+
+
+
+
+
+
+
+
+
+
+        public List<Lugares_Playas> ListPlayas()
+        {
+            return _database.Table<Lugares_Playas>().ToList();
+        }
+
+
+        public List<Comentarios> GetComentarios()
+        {
+            return _database.Table<Comentarios>().ToList();
+
+
         }
 
 
@@ -87,68 +193,6 @@ namespace TurisTico.Data
 
         //}
 
-
-
-        public List<Comentarios> GetComentarios()
-        {
-            return _database.Table<Comentarios>().ToList();
-
-
-        }
-
-
-        public List<Lugares_Alajuela> ListAlajuela()
-        {
-            return _database.Table<Lugares_Alajuela>().ToList();
-        }
-
-
-        public List<Lugares_Ciudad> List_Ciudad()
-        {
-            return _database.Table<Lugares_Ciudad>().ToList();
-        }
-
-
-        public List<Lugares_Bosque> ListBosque()
-        {
-            return _database.Table<Lugares_Bosque>().ToList();
-        }
-
-
-
-        public List<Lugares_Montanas> ListMnotanas()
-        {
-            return _database.Table<Lugares_Montanas>().ToList();
-        }
-
-
-
-
-
-
-        public List<Lugares_Puntarenas> ListPuntarenas()
-        {
-            return _database.Table<Lugares_Puntarenas>().ToList();
-        }
-
-
-
-
-
-
-        public List<Lugares_Guanacaste> ListGuanacaste()
-        {
-            return _database.Table<Lugares_Guanacaste>().ToList();
-        }
-
-
-
-
-
-        public List<Lugares_Playas> ListPlayas()
-        {
-            return _database.Table<Lugares_Playas>().ToList();
-        }
 
 
 

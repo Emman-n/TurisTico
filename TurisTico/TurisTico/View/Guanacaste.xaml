@@ -25,8 +25,8 @@
 
         <Label Text="Lugares en guanacaste"  FontFamily="Dancing" HorizontalOptions="Center" TextColor="Black" FontSize="30"   Margin="15"/>
 
-
-        <CollectionView   ItemsSource="{Binding Datos_Gunacaste }" >
+        <!--ItemSelected="idFrontG_ItemSelected"-->
+        <CollectionView     x:Name="idFrontG"     SelectionMode="Single" SelectionChanged="idFrontG_SelectionChanged"    ItemsSource="{Binding Datos_Gunacaste }" >
             <CollectionView.ItemTemplate>
                 <DataTemplate  >
                     <Frame Padding="5"
@@ -37,12 +37,12 @@
 
 
                         <Grid HeightRequest="200" BackgroundColor="#E6E6E6"  >
-                            <Grid.GestureRecognizers>
+                            <!--<Grid.GestureRecognizers>
                                 <TapGestureRecognizer Tapped="TapGestureRecognizer_Info_Lugar" >
 
 
                                 </TapGestureRecognizer>
-                            </Grid.GestureRecognizers>
+                            </Grid.GestureRecognizers>-->
 
 
 
@@ -64,8 +64,7 @@
                         Source="{Binding Image_Lugar}"
                          HorizontalOptions="FillAndExpand"
                           VerticalOptions="FillAndExpand" 
-                        Aspect="Fill"              
-                        />
+                        Aspect="Fill"/>
 
 
 
@@ -86,7 +85,8 @@
                         Grid.Row="2"
                         Grid.Column="3"
                         FontSize="15"
-                        Text="{Binding Ubicacion }"                         
+                        Text="{Binding Ubicacion }"   
+                      
                         FontFamily="Noto" />
 
 
@@ -98,6 +98,22 @@
                         FontSize="15"
                         Text="{Binding Precio_Lugar }"                         
                         FontFamily="Noto" />
+
+
+
+                            <Button 
+                                IsVisible="true "
+                        FontAttributes="Bold"
+                       Grid.Row="4"
+                        Grid.Column="3"
+                        FontSize="15"
+                        Text=   "{Binding Id }"    
+                       
+                             
+                    
+                         VerticalOptions="Center"  
+                        TextColor="Red"
+                        FontFamily="Noto"   />
 
 
 

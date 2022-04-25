@@ -51,5 +51,13 @@ namespace TurisTico.View
             await Navigation.PushAsync(new Alajuela());
 
         }
+
+        private async void btnLimon_Clicked(object sender, EventArgs e)
+        {
+
+            await Navigation.PushAsync(new Limon());
+
+
+        }
     }
 }

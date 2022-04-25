@@ -24,7 +24,7 @@ namespace TurisTico.View
 
 
 
-            var getIDpls = repos.ListProductid_Guanacaste(idfront);
+            var getIDpls = repos.ListProductid_Guanacaste(5);
             Datos_Gunacaste_id.Add(getIDpls);
             BindingContext = this;
 
