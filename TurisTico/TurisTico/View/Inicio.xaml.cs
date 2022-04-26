@@ -59,5 +59,11 @@ namespace TurisTico.View
 
 
         }
+
+        private async void ToolbarItem_Clicked_Clima(object sender, EventArgs e)
+        {
+            await Navigation.PushAsync(new ApiClima.CLima());
+
+        }
     }
 }

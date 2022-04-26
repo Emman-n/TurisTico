@@ -6,17 +6,17 @@ namespace TurisTico.Models
 {
     public class ApiData
     {
-        public Rootobject[] data { get; set; }
+        public Rootobject[] rootobject { get; set; }
     }
-
 
     public class Rootobject
     {
         public Coord coord { get; set; }
-        public Weather[] wind { get; set; }
+        public Weather[] weather { get; set; }
         public string _base { get; set; }
         public Main main { get; set; }
         public int visibility { get; set; }
+        public Wind wind { get; set; }
         public Clouds clouds { get; set; }
         public int dt { get; set; }
         public Sys sys { get; set; }
@@ -29,7 +29,7 @@ namespace TurisTico.Models
     public class Coord
     {
         public float lon { get; set; }
-        public float lat { get; set; }
+        public int lat { get; set; }
     }
 
     public class Main
@@ -46,6 +46,7 @@ namespace TurisTico.Models
     {
         public float speed { get; set; }
         public int deg { get; set; }
+        public float gust { get; set; }
     }
 
     public class Clouds
@@ -69,6 +70,10 @@ namespace TurisTico.Models
         public string description { get; set; }
         public string icon { get; set; }
     }
+
+
+
+
 
 
 
