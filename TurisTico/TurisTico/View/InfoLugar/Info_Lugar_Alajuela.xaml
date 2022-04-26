@@ -91,10 +91,12 @@
                            FontSize="15"
                             Text="{Binding Ubicacion }"                         
                             FontFamily="Noto" 
-#E6D5F1EE                               />
+                                
+                                                            BackgroundColor="#DFEFED"
+                               />
 
 
-                            <Label  Grid.Row="4"
+                        <Label  Grid.Row="4"
                          TextColor="Black"
                         FontAttributes="Bold"
                         FontSize="20"
@@ -104,7 +106,7 @@
 
                                 />
 
-                            <Label  Grid.Row="5"
+                        <Label  Grid.Row="5"
                         Grid.ColumnSpan="5"
                         TextColor="Black"
                         FontAttributes="Bold"
@@ -115,7 +117,7 @@
 
                                 />
 
-                            <Label  Grid.Row="6"
+                        <Label  Grid.Row="6"
                         Grid.ColumnSpan="5"
                         TextColor="Black"
                         FontAttributes="Bold"

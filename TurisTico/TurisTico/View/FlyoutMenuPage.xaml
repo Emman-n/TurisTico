@@ -12,7 +12,7 @@
                 <x:Array Type="{x:Type local:FlyoutItemPage}">
                     <local:FlyoutItemPage Title="Inicio" TargetPage="{x:Type local1:Inicio}"/>
                     <local:FlyoutItemPage Title="Categorias" IconSource="http://cdn.onlinewebfonts.com/svg/img_87908.png" TargetPage="{x:Type local1:Categorias}"/>
-                    <local:FlyoutItemPage Title="Clima" IconSource="http://cdn.onlinewebfonts.com/svg/img_87908.png" TargetPage="{x:Type local1:API}"/>
+                    <!--<local:FlyoutItemPage Title="Clima" IconSource="http://cdn.onlinewebfonts.com/svg/img_87908.png" TargetPage="{x:Type local1:}"/>-->
 
 
                 </x:Array>

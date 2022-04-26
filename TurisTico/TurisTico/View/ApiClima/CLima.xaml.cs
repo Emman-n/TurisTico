@@ -7,15 +7,15 @@ using TurisTico.ViewModels;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 
-namespace TurisTico.View
+namespace TurisTico.View.ApiClima
 {
     [XamlCompilation(XamlCompilationOptions.Compile)]
-    public partial class API : ContentPage
+    public partial class CLima : ContentPage
     {
-        public API()
+        public CLima()
         {
             InitializeComponent();
-            BindingContext = new ApiDataViewModel();
+            BindingContext = new ClimaViewModel();
 
         }
     }

@@ -40,7 +40,7 @@
     <EmbeddedResource Update="View\AboutUS.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
-    <EmbeddedResource Update="View\API.xaml">
+    <EmbeddedResource Update="View\ApiClima\CLima.xaml">
       <Generator>MSBuild:UpdateDesignTimeXaml</Generator>
     </EmbeddedResource>
     <EmbeddedResource Update="View\InfoLugar\Info_Lugar_Alajuela.xaml">

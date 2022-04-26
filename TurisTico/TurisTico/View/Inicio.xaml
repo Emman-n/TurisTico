@@ -2,19 +2,24 @@
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="TurisTico.View.Inicio"
-             BackgroundColor="#E6D5F1EE">
+             BackgroundColor="#A4D3EFEC">
 
     <ContentPage.ToolbarItems>
 
 
 
 
-        <ToolbarItem    Text="Turistico    " Order="Primary">
+
+
+        <ToolbarItem Text="Clima" Order="Primary" Clicked="ToolbarItem_Clicked_Clima">
+
+        </ToolbarItem>
+
+        <ToolbarItem    Text="Turistico   " Order="Primary">
 
 
 
         </ToolbarItem>
-
 
     </ContentPage.ToolbarItems>
 
