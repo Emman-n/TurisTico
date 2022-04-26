@@ -2,6 +2,7 @@
 using System.Collections.ObjectModel;
 using TurisTico.Data;
 using TurisTico.Models;
+using TurisTico.View.InfoLugar;
 using Xamarin.Forms;
 
 namespace TurisTico.View
@@ -43,7 +44,7 @@ namespace TurisTico.View
         }
         private async void TapGestureRecognizer_Info_Lugar(object sender, EventArgs e)
         {
-            await Navigation.PushAsync(new Info_Lugar());
+            await Navigation.PushAsync(new Info_Lugar_Puntarenas());
         }
     }
 

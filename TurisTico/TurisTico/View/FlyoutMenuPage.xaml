@@ -12,7 +12,7 @@
                 <x:Array Type="{x:Type local:FlyoutItemPage}">
                     <local:FlyoutItemPage Title="Inicio" TargetPage="{x:Type local1:Inicio}"/>
                     <local:FlyoutItemPage Title="Categorias" IconSource="http://cdn.onlinewebfonts.com/svg/img_87908.png" TargetPage="{x:Type local1:Categorias}"/>
-                    <local:FlyoutItemPage Title="Clima" IconSource="http://cdn.onlinewebfonts.com/svg/img_87908.png" TargetPage="{x:Type local1:Categorias}"/>
+                    <local:FlyoutItemPage Title="Clima" IconSource="http://cdn.onlinewebfonts.com/svg/img_87908.png" TargetPage="{x:Type local1:API}"/>
 
 
                 </x:Array>
@@ -20,7 +20,7 @@
             </ListView.ItemsSource>
             <ListView.ItemTemplate>
                 <DataTemplate>
-                 
+
                     <ViewCell>
                         <Grid>
                             <Grid.ColumnDefinitions>
@@ -30,15 +30,15 @@
                                 <ColumnDefinition Width="*">
 
                                 </ColumnDefinition>
-                                
-                                
+
+
 
                             </Grid.ColumnDefinitions>
                             <Image Source="{Binding IconSource}"/>
                             <Label Grid.Column="1"  Text="{Binding Title}"/>
 
 
-                            
+
                         </Grid>
                     </ViewCell>
                 </DataTemplate>

@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="TurisTico.View.Montana">
+             x:Class="TurisTico.View.Playas">
     <ContentPage.ToolbarItems>
 
 
@@ -12,7 +12,7 @@
         <ToolbarItem Text="Turistico" Order="Primary">
             <ToolbarItem.Icon>
                 <OnPlatform x:TypeArguments="FileImageSource"
-                       />
+                        Android="icon.png"/>
 
             </ToolbarItem.Icon>
         </ToolbarItem>
@@ -22,10 +22,10 @@
 
     <StackLayout >
 
-        <Label Text="Lugares en la Montana"  FontFamily="Dancing" HorizontalOptions="Center" TextColor="Black" FontSize="30"   Margin="15"/>
+        <Label Text="Lugares en la Playa"  FontFamily="Dancing" HorizontalOptions="Center" TextColor="Black" FontSize="30"   Margin="15"/>
 
 
-        <CollectionView   ItemsSource="{Binding Datos_Motanas}" >
+        <CollectionView   ItemsSource="{Binding Datos_Playas }" >
             <CollectionView.ItemTemplate>
                 <DataTemplate  >
                     <Frame Padding="5"
@@ -48,10 +48,6 @@
 
 
 
-
-
-
-
                             <Grid.ColumnDefinitions  >
                                 <ColumnDefinition Width=".1*"/>
                                 <ColumnDefinition Width=".9*"/>
@@ -64,26 +60,20 @@
                             </Grid.RowDefinitions>
 
 
-                            <Image
+                            <Label
                         Grid.RowSpan="5"
                          Grid.Column="1"
-
-                        Source="{Binding Image_Lugar}"
-                        
+                        Text="{Binding Image_Lugar}"    
                          HorizontalOptions="FillAndExpand"
                           VerticalOptions="FillAndExpand" 
-                        Aspect="Fill"
-                        
-                        
                         />
 
                             <Label
-                       
                         FontAttributes="Bold"
                         Grid.Column="3"
-                        Grid.Row="1"
+                        Grid.RowSpan="2"
                         FontSize="15"
-                        Text= "{Binding Nombre }"      
+                        Text= "{Binding Nombre_Lugar }"      
                         VerticalOptions="Center"  
                         TextColor="Black"
                         FontFamily="Noto"   />
@@ -104,7 +94,7 @@
                         Grid.Row="3"
                         Grid.Column="3"
                         FontSize="15"
-                        Text="{Binding Precio_Lugar }"                         
+                        Text="{Binding Precio }"                         
                         FontFamily="Noto" />
 
 

@@ -1,0 +1,144 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="TurisTico.View.InfoLugar.Info_Lugar_Puntarenas">
+    <ContentPage.ToolbarItems>
+
+
+
+        <ToolbarItem Text="Inico" Order="Primary" Clicked="ToolbarItem_Clicked_Inicio">
+
+        </ToolbarItem>
+
+        <ToolbarItem Text="Turistico" Order="Primary">
+            <ToolbarItem.Icon>
+                <OnPlatform x:TypeArguments="FileImageSource"
+                        Android="icon.png"/>
+
+            </ToolbarItem.Icon>
+        </ToolbarItem>
+
+
+    </ContentPage.ToolbarItems>
+
+    <StackLayout >
+
+        <Label Text="Informacion Lugar"  FontFamily="Dancing" HorizontalOptions="Center" TextColor="Black" FontSize="30"   Margin="5"/>
+
+
+        <CollectionView   ItemsSource="{Binding Datos_Puntarenas_id }" >
+            <CollectionView.ItemTemplate>
+                <DataTemplate  >
+
+
+                    <Grid  Margin="2" Padding="8"    BackgroundColor="White"  >
+
+
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="*"/>
+                            <RowDefinition Height="50"/>
+                            <RowDefinition Height="40"/>
+                            <RowDefinition Height="40"/>
+                            <RowDefinition Height="30"/>
+                            <RowDefinition Height="130"/>
+                            <RowDefinition Height="40"/>
+
+                        </Grid.RowDefinitions>
+
+
+                        <Grid.ColumnDefinitions>
+
+
+
+                        </Grid.ColumnDefinitions>
+
+
+
+
+
+
+                        <Label  Grid.Row ="2"
+                            Grid.ColumnSpan="5"
+                            BackgroundColor="White"
+                            FontAttributes="Bold"
+                            FontSize="25"
+                            Text= "{Binding Nombre }"      
+                            TextColor="Black"
+                            FontFamily="Dancing"  
+                            HorizontalOptions="Center"
+
+                                />
+
+
+
+                        <Image Grid.RowSpan="2"
+                            Grid.ColumnSpan="5"
+                            BackgroundColor="Black"
+                            Source="lugar5.jpg"                                
+                            HeightRequest="320"      
+                            HorizontalOptions="FillAndExpand"
+                            VerticalOptions="FillAndExpand" 
+                            Aspect="AspectFill"    />
+
+
+
+
+
+                        <Label  Grid.Row ="3"
+                           Grid.ColumnSpan="3"
+                           TextColor="Black"
+                           FontSize="15"
+                            Text="{Binding Ubicacion }"                         
+                            FontFamily="Noto" 
+                            BackgroundColor="White"
+                               />
+
+
+                        <Label  Grid.Row="4"
+                         TextColor="Black"
+                        FontAttributes="Bold"
+                        FontSize="20"
+                        Text="{Binding Precio_Lugar }"                         
+                        FontFamily="Noto" 
+                        BackgroundColor="White"
+
+                                />
+
+                        <Label  Grid.Row="5"
+                        Grid.ColumnSpan="5"
+                        TextColor="Black"
+                        FontAttributes="Bold"
+                        FontSize="15"
+                        Text="{Binding Descripcion_Lugar }"                         
+                        FontFamily="Noto" 
+                        BackgroundColor="White"
+
+                                />
+
+                        <Label  Grid.Row="6"
+                        Grid.ColumnSpan="5"
+                        TextColor="Black"
+                        FontAttributes="Bold"
+                        FontSize="15"
+                        Text="Contacto: 234234"                         
+                        FontFamily="Noto" 
+                        BackgroundColor="White"
+
+                                />
+
+
+
+
+
+
+                    </Grid>
+
+
+
+                </DataTemplate>
+            </CollectionView.ItemTemplate>
+        </CollectionView>
+    </StackLayout>
+
+</ContentPage>
+

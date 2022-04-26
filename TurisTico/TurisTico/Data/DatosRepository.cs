@@ -10,8 +10,6 @@ namespace TurisTico.Data
     public class DatosRepository
     {
 
-
-
         private readonly SQLiteConnection _database;
 
         public static string DbPath { get; } = Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.LocalApplicationData),
@@ -35,7 +33,7 @@ namespace TurisTico.Data
         }
 
 
-        //-----------------SanJose-------------------
+        //-----------------SanJose-----------------------
         public List<Product> ListProduct()
         {
             return _database.Table<Product>().ToList();
@@ -68,13 +66,7 @@ namespace TurisTico.Data
 
 
 
-
-
-
-
-
         //-----------------Alajuela-------------------
-
 
         public List<Lugares_Alajuela> ListAlajuela()
         {
@@ -82,13 +74,13 @@ namespace TurisTico.Data
         }
 
 
-        //public Lugares_Alajuela ListProductid_Alajuela(int Dato1)
-        //{
+        public Lugares_Alajuela ListProductid_Alajuela(int Dato1)
+        {
 
-        //    var a = _database.Table<Lugares_Alajuela>().FirstOrDefault(x => x.Id == Dato1);
+            var a = _database.Table<Lugares_Alajuela>().FirstOrDefault(x => x.Id == Dato1);
 
-        //    return a;
-        //}
+            return a;
+        }
 
         //-----------------Puntareanas-------------------
 
@@ -97,13 +89,13 @@ namespace TurisTico.Data
             return _database.Table<Lugares_Puntarenas>().ToList();
         }
 
-        //public Lugares_Puntarenas ListProductid_Puntarenas(int Dato1)
-        //{
+        public Lugares_Puntarenas ListProductid_Puntarenas(int Dato1)
+        {
 
-        //    var a = _database.Table<Lugares_Puntarenas>().FirstOrDefault(x => x.Id == Dato1);
+            var a = _database.Table<Lugares_Puntarenas>().FirstOrDefault(x => x.Id == Dato1);
 
-        //    return a;
-        //}
+            return a;
+        }
 
 
 
@@ -114,19 +106,17 @@ namespace TurisTico.Data
             return _database.Table<Lugares_Limon>().ToList();
         }
 
-        //public Lugares_Puntarenas ListProductid_Puntarenas(int Dato1)
-        //{
+        public Lugares_Limon ListProductid_Limon(int Dato1)
+        {
 
-        //    var a = _database.Table<Lugares_Puntarenas>().FirstOrDefault(x => x.Id == Dato1);
+            var a = _database.Table<Lugares_Limon>().FirstOrDefault(x => x.Id == Dato1);
 
-        //    return a;
-        //}
-
-
+            return a;
+        }
 
 
 
-
+        //-----------------Ciudad-------------------
 
         public List<Lugares_Ciudad> List_Ciudad()
         {
@@ -134,6 +124,7 @@ namespace TurisTico.Data
         }
 
 
+        //-----------------Bosque-------------------
 
         public List<Lugares_Bosque> ListBosque()
         {
@@ -141,28 +132,41 @@ namespace TurisTico.Data
         }
 
 
+        //-----------------Montanas-------------------
 
         public List<Lugares_Montanas> ListMnotanas()
         {
             return _database.Table<Lugares_Montanas>().ToList();
+
+        }
+
+        public Lugares_Montanas ListProductid_Montanas(int Dato1)
+        {
+
+            var a = _database.Table<Lugares_Montanas>().FirstOrDefault(x => x.Id == Dato1);
+
+            return a;
         }
 
 
 
-
-
-
-
-
-
-
-
-
+        //-----------------Playas-------------------
 
         public List<Lugares_Playas> ListPlayas()
         {
             return _database.Table<Lugares_Playas>().ToList();
         }
+
+        public Lugares_Playas ListProductid_Playas(int Dato1)
+        {
+
+            var a = _database.Table<Lugares_Playas>().FirstOrDefault(x => x.Id == Dato1);
+
+            return a;
+        }
+
+
+
 
 
         public List<Comentarios> GetComentarios()

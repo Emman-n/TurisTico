@@ -1,21 +1,18 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="TurisTico.View.Inicio">
+             x:Class="TurisTico.View.Inicio"
+             BackgroundColor="#E6D5F1EE">
 
     <ContentPage.ToolbarItems>
 
 
-        <ToolbarItem Text="Inico" Order="Primary" Clicked="ToolbarItem_Clicked_Inicio">
 
-        </ToolbarItem>
 
-        <ToolbarItem Text="Turistico" Order="Primary">
-            <ToolbarItem.Icon>
-                <OnPlatform x:TypeArguments="FileImageSource"
-                        Android="icon.png"/>
+        <ToolbarItem    Text="Turistico    " Order="Primary">
 
-            </ToolbarItem.Icon>
+
+
         </ToolbarItem>
 
 
@@ -27,7 +24,7 @@
         <Label Text="Explore Costa Rica!"   FontFamily="Dancing" HorizontalOptions="Center" TextColor="Black" FontSize="25"   Margin="15"/>
 
 
-        <Grid RowSpacing="3" ColumnSpacing="3" Margin="1">
+        <Grid RowSpacing="3" ColumnSpacing="3" Margin="2">
 
 
             <Grid.RowDefinitions>
@@ -111,10 +108,10 @@
                       x:Name="btnAlajuela"
                  Clicked="btnAlajuela_Clicked"   
                     
-          Opacity="0.2"
+          Opacity="0.3"
            HorizontalOptions="FillAndExpand"
            VerticalOptions="FillAndExpand"
-           TextColor="White" />
+           TextColor="#A0A0A0" />
             <Label Text="Alajuela" 
                TextColor="White"
                Grid.Row="1" Grid.Column="0"

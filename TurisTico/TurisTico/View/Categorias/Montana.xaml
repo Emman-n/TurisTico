@@ -1,9 +1,8 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="TurisTico.View.Alajuela">
+             x:Class="TurisTico.View.Montana">
     <ContentPage.ToolbarItems>
-
 
 
         <ToolbarItem Text="Inico" Order="Primary" Clicked="ToolbarItem_Clicked_Inicio">
@@ -13,7 +12,7 @@
         <ToolbarItem Text="Turistico" Order="Primary">
             <ToolbarItem.Icon>
                 <OnPlatform x:TypeArguments="FileImageSource"
-                        Android="icon.png"/>
+                       />
 
             </ToolbarItem.Icon>
         </ToolbarItem>
@@ -23,10 +22,10 @@
 
     <StackLayout >
 
-        <Label Text="Opciones en Alajuela"  FontFamily="Dancing" HorizontalOptions="Center" TextColor="Black" FontSize="30"   Margin="15"/>
+        <Label Text="Lugares en la Montana"  FontFamily="Dancing" HorizontalOptions="Center" TextColor="Black" FontSize="30"   Margin="15"/>
 
 
-        <CollectionView   ItemsSource="{Binding Datos_Alajuela }" >
+        <CollectionView   ItemsSource="{Binding Datos_Motanas}" >
             <CollectionView.ItemTemplate>
                 <DataTemplate  >
                     <Frame Padding="5"
@@ -36,13 +35,20 @@
                        >
 
 
-                        <Grid HeightRequest="250" BackgroundColor="#E6E6E6"  >
+                        <Grid HeightRequest="200" BackgroundColor="#E6E6E6"  >
                             <Grid.GestureRecognizers>
                                 <TapGestureRecognizer Tapped="TapGestureRecognizer_Info_Lugar" >
 
 
                                 </TapGestureRecognizer>
                             </Grid.GestureRecognizers>
+
+
+
+
+
+
+
 
 
 
@@ -77,7 +83,7 @@
                         Grid.Column="3"
                         Grid.Row="1"
                         FontSize="15"
-                        Text= "{Binding Nombre }"      
+                        Text= "{Binding Nombre_Lugar }"      
                         VerticalOptions="Center"  
                         TextColor="Black"
                         FontFamily="Noto"   />
@@ -116,4 +122,6 @@
     </StackLayout>
 
 </ContentPage>
+
+
 

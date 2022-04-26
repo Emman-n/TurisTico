@@ -6,6 +6,7 @@ using System.Text;
 using System.Threading.Tasks;
 using TurisTico.Data;
 using TurisTico.Models;
+using TurisTico.View.InfoLugar;
 using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 
@@ -51,7 +52,7 @@ namespace TurisTico.View
 
 
 
-            await Navigation.PushAsync(new Info_Lugar());
+            await Navigation.PushAsync(new Info_Lugar_Limon());
 
 
         }

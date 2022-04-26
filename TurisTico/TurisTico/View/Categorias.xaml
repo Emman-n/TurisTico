@@ -29,7 +29,7 @@
 
     <StackLayout>
 
-        <Label Text="Categorias"   FontFamily="Dancing" HorizontalOptions="Center" TextColor="Black" FontSize="25"   Margin="15"/>
+        <Label Text="Categorias"   FontFamily="Dancing" HorizontalOptions="Center" TextColor="Black" FontSize="25"   Margin="10"/>
 
 
         <Grid RowSpacing="10" ColumnSpacing="5" Margin="2">
@@ -82,8 +82,8 @@
                     
                       x:Name="btnMotanas"
                  Clicked="btnMotanas_Clicked"
-          Opacity="0.2"
-           HorizontalOptions="FillAndExpand"
+          Opacity="0.1"
+           HorizontalOptions="Fill"
            VerticalOptions="FillAndExpand"
            TextColor="White" />
             <Label Text="Montanas" 
@@ -107,8 +107,8 @@
             <Button Grid.Row="1" Grid.Column="0"
                       x:Name="btnCiudad"
                  Clicked="btnCiudad_Clicked"
-          Opacity="0.2"
-           HorizontalOptions="FillAndExpand"
+          Opacity="0.1"
+           HorizontalOptions="Fill"
            VerticalOptions="FillAndExpand"
            TextColor="White" />
             <Label Text="Ciudad" 
@@ -134,7 +134,7 @@
                     
                       x:Name="btnBosques"
                  Clicked="btnBosques_Clicked"
-          Opacity="0.2"
+          Opacity="0.1"
            HorizontalOptions="FillAndExpand"
            VerticalOptions="FillAndExpand"
            TextColor="White" />

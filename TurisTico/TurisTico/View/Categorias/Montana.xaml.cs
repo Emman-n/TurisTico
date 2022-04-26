@@ -2,30 +2,27 @@
 using System.Collections.ObjectModel;
 using TurisTico.Data;
 using TurisTico.Models;
+using TurisTico.View.InfoLugar;
 using Xamarin.Forms;
 
 namespace TurisTico.View
 {
-
-
-
-    public partial class Playas : ContentPage
+    public partial class Montana : ContentPage
     {
 
 
-        public ObservableCollection<Lugares_Playas> Datos_Playas { get; set; } = new
-                ObservableCollection<Lugares_Playas>();
+
+        public ObservableCollection<Lugares_Montanas> Datos_Motanas { get; set; } = new
+                ObservableCollection<Lugares_Montanas>();
 
 
-
-        public Playas()
+        public Montana()
         {
             InitializeComponent();
-
             DatosRepository repos2 = new DatosRepository();
-            foreach (var datos2 in repos2.ListPlayas())
+            foreach (var datos2 in repos2.ListMnotanas())
             {
-                Datos_Playas.Add(datos2);
+                Datos_Motanas.Add(datos2);
             }
             BindingContext = this;
 
@@ -38,13 +35,14 @@ namespace TurisTico.View
 
         }
 
+
         private async void ToolbarItem_Clicked_Inicio(object sender, EventArgs e)
         {
             await Navigation.PushAsync(new Inicio());
         }
         private async void TapGestureRecognizer_Info_Lugar(object sender, EventArgs e)
         {
-            await Navigation.PushAsync(new Info_Lugar());
+            await Navigation.PushAsync(new Info_Lugar_Montana());
         }
     }
 
@@ -52,6 +50,7 @@ namespace TurisTico.View
 
 
 }
+
 
 
 

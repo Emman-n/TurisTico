@@ -37,7 +37,7 @@
                               BackgroundColor="White"
                        >
 
-                        <Grid   BackgroundColor="#E6E6E6"  >
+                        <Grid HeightRequest="200"  BackgroundColor="#CCD4E7"  >
                             <Grid.GestureRecognizers>
                                 <TapGestureRecognizer Tapped="TapGestureRecognizer_Info_Lugar" >
 
