@@ -26,7 +26,7 @@
         <Label Text="Lugares en guanacaste"  FontFamily="Dancing" HorizontalOptions="Center" TextColor="Black" FontSize="30"   Margin="15"/>
 
         <!--ItemSelected="idFrontG_ItemSelected"-->
-        <CollectionView     x:Name="idFrontG"     SelectionMode="Single" SelectionChanged="idFrontG_SelectionChanged"    ItemsSource="{Binding Datos_Gunacaste }" >
+        <CollectionView ItemsSource="{Binding Datos_Gunacaste }" >
             <CollectionView.ItemTemplate>
                 <DataTemplate  >
                     <Frame Padding="5"
@@ -37,12 +37,12 @@
 
 
                         <Grid HeightRequest="200" BackgroundColor="#CCD4E7"  >
-                            <!--<Grid.GestureRecognizers>
+                            <Grid.GestureRecognizers>
                                 <TapGestureRecognizer Tapped="TapGestureRecognizer_Info_Lugar" >
 
 
                                 </TapGestureRecognizer>
-                            </Grid.GestureRecognizers>-->
+                            </Grid.GestureRecognizers>
 
 
 
@@ -96,24 +96,10 @@
                         Grid.Row="3"
                         Grid.Column="3"
                         FontSize="15"
-                        Text="{Binding Precio_Lugar }"                         
+                        Text="{Binding Precio }"                         
                         FontFamily="Noto" />
 
 
-
-                            <Button 
-                                IsVisible="true "
-                        FontAttributes="Bold"
-                       Grid.Row="4"
-                        Grid.Column="3"
-                        FontSize="15"
-                        Text=   "{Binding Id }"    
-                       
-                             
-                    
-                         VerticalOptions="Center"  
-                        TextColor="Red"
-                        FontFamily="Noto"   />
 
 
 

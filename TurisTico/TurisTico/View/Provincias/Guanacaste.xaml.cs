@@ -31,18 +31,19 @@ namespace TurisTico.View
 
 
         }
-        //private async void TapGestureRecognizer_Info_Lugar(object sender, EventArgs e)
-        //{
+        private async void TapGestureRecognizer_Info_Lugar(object sender, EventArgs e)
+        {
+
+            await Navigation.PushAsync(new Info_Lugar());
 
 
+            //var deviceId = CrossDeviceInfo.Current.Id;
+            //var deviceIdResult = new Label();
 
-        //    //var deviceId = CrossDeviceInfo.Current.Id;
-        //    //var deviceIdResult = new Label();
-
-        //    //deviceIdResult.Text = deviceId;
-
+            //deviceIdResult.Text = deviceId;
 
 
+        }
         //    //var getIDpls = repos.ListProductid_Guanacaste(1);
         //    //Datos_Gunacaste.Add(getIDpls);
         //    //BindingContext = this;
@@ -52,17 +53,17 @@ namespace TurisTico.View
 
         //}
 
-        private void idFrontG_SelectionChanged(object sender, SelectionChangedEventArgs e)
-        {
-            var ok = (Lugares_Guanacaste)e.CurrentSelection;
+        //private void idFrontG_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        //{
+        //    //var ok = (Lugares_Guanacaste)e.CurrentSelection;
 
 
 
-            var getIDpls = repos.ListProductid_Guanacaste(ok.Id);
-            Datos_Gunacaste.Add(getIDpls);
-            BindingContext = this;
+        //    //var getIDpls = repos.ListProductid_Guanacaste(ok.Id);
+        //    Datos_Gunacaste.Add(getIDpls);
+        //    BindingContext = this;
 
-        }
+        //}
 
     }
 

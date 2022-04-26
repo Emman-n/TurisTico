@@ -16,7 +16,7 @@ namespace TurisTico.Models
         public string Ubicacion { get; set; }
 
 
-        public string Precio_Lugar { get; set; }
+        public string Precio { get; set; }
 
         public string Descripcion_Lugar { get; set; }
 

@@ -2,7 +2,7 @@
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="TurisTico.View.Inicio"
-             BackgroundColor="#A4D3EFEC">
+             BackgroundColor="#A4FAFFFD">
 
     <ContentPage.ToolbarItems>
 
@@ -29,7 +29,7 @@
         <Label Text="Explore Costa Rica!"   FontFamily="Dancing" HorizontalOptions="Center" TextColor="Black" FontSize="25"   Margin="15"/>
 
 
-        <Grid RowSpacing="3" ColumnSpacing="3" Margin="2">
+        <Grid RowSpacing="4" ColumnSpacing="4" Margin="2">
 
 
             <Grid.RowDefinitions>
@@ -144,10 +144,10 @@
           Opacity="0.2"
            HorizontalOptions="FillAndExpand"
            VerticalOptions="FillAndExpand"
-           TextColor="White" />
+           TextColor="#B0B0B0" />
             <Label  Grid.Row="1" Grid.Column="1"
             Text="Limon" 
-               TextColor="White"
+               TextColor="#B8B8B8"
                  HorizontalOptions="Center"
                VerticalOptions="Center" 
                 FontSize="25"

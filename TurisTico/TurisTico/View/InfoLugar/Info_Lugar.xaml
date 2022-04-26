@@ -96,10 +96,10 @@
 
 
                         <Label  Grid.Row="4"
-                         TextColor="#00FF0B"
+                         TextColor="#020202"
                         FontAttributes="Bold"
                         FontSize="20"
-                        Text="{Binding Precio_Lugar }"                         
+                        Text="{Binding Precio }"                         
                         FontFamily="Noto" 
                         BackgroundColor="White"
 

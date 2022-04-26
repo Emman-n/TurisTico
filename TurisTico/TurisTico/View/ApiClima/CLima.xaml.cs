@@ -14,7 +14,7 @@ namespace TurisTico.View.ApiClima
     {
         public CLima()
         {
-            InitializeComponent();
+            // InitializeComponent();
             BindingContext = new ClimaViewModel();
 
         }
